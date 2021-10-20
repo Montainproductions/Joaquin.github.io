@@ -1,12 +1,13 @@
-## Welcom to my website
+## Welcome to my website
 
 Hello, I a am Joaquin De Losada a 21 year old American-Peruvian. I am currently in my third year at Brock University studing in the Interactive Arts and Science (IASC). I made this website using markdown and Github pages as a way to bundle all of my projects from both Github and Itch.io together so that it is easier to find everything I have done and how I have improved over time.
 
-### Markdown
+### Game Projects:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+# Word Hunter
 ```markdown
+The first ever game that I made was called **Word Hunter** and I made it for a project in school as a way to see if game development and programming in general would be something I would be greatly interested in working on in my future. After watching variouse tutorials and working on the project while in school to make the game. It ended up being a top down game were the player has to find and collect all of the letters in each maze and once completing the maze and collecting the letters then you would have written a full word.
+
 Syntax highlighted code block
 
 # Header 1
@@ -21,10 +22,8 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+[Link](https://montain-productions.itch.io/word-hunter)
 
 ### Jekyll Themes
 
