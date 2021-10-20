@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Welcom to my website
 
-You can use the [editor on GitHub](https://github.com/Montainproductions/Joaquin.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Hello, I a am Joaquin De Losada a 21 year old American-Peruvian. I am currently in my third year at Brock University studing in the Interactive Arts and Science (IASC). I made this website using markdown and Github pages as a way to bundle all of my projects from both Github and Itch.io together so that it is easier to find everything I have done and how I have improved over time.
 
 ### Markdown
 
