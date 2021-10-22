@@ -50,8 +50,13 @@ I also have made diffrent repositories where I have uploaded diffrent projects I
 
 
 ### Dont Fail the class Game
+This repository is for a group project that me and a some class mates from the IASC 3F02 class are creating. The project we are working on is a 2.5d pixel art game in unity were the player is trying to finish the 9th grade while fighting bullies, bosses and challenges in the diffrent classes. The game is planned to be a beta version of the game with only one school year as a way to see how fun and interesting a game with this option can be. At the same time this allows me to learn how to better work colaberativly in a design/creative envirnment so that I am better prepared for when I start working in other industrys as part of my work.
+
+[Link to Repository](https://github.com/Montainproductions/DontFailtheClass)
 
 ### Java Programming practice
 I made this repository as a way to be able to continusly practice Java Programming. I got most of the challenges from Katties and slowly tried to get harder options as a way to continusly try to challange myself. I later started to work on a basic Java GUI system as a way to both practice how to make some basic GUI and to make an easier way to interact with all of the challenges that I complete in a more convininte manner instead of having to go through my code to try and find and run the specific challenge that I might of completed already.
+
+[Link to Repository](https://github.com/Montainproductions/Java-Programming-Practice)
 
 ### Website
