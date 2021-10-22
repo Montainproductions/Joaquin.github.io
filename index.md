@@ -46,11 +46,12 @@ Release Date: September 2021
 ---
 
 ## Repositories
-The following subsections are all about the diffrent Repositories (Repos) that I currently have in my Github account which I belive are the most interesting and worth while to look at. Two 
+I also have made diffrent repositories where I have uploaded diffrent projects I have or am currently working on as a way to show how I would solve diffrent problems.
 
 
 ### Dont Fail the class Game
 
 ### Java Programming practice
+I made this repository as a way to be able to continusly practice Java Programming. I got most of the challenges from Katties and slowly tried to get harder options as a way to continusly try to challange myself. I later started to work on a basic Java GUI system as a way to both practice how to make some basic GUI and to make an easier way to interact with all of the challenges that I complete in a more convininte manner instead of having to go through my code to try and find and run the specific challenge that I might of completed already.
 
 ### Website
