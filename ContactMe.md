@@ -1,5 +1,5 @@
 ---
-layout: "Contactinfo"
+layout: "ContactMe"
 title: Contact_me
 ---
 
@@ -18,5 +18,3 @@ title: Contact_me
 
 ## Itch.Io
 [Itch.IO Page](https://montain-productions.itch.io/)
-
----

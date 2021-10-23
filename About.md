@@ -11,5 +11,3 @@ Hello, I am Joaquin De Losada, a 21 year old American-Peruvian. I am currently i
 
 
 The games I find myself most repeatedly going back to play are Age of Empires 2, Call of Duty: Black Ops 3, Europa universal 4, and Minecraft.
-
----
