@@ -4,20 +4,10 @@ Hello, I am Joaquin De Losada, a 21 year old American-Peruvian. I am currently i
 
 [More About Me](https://montainproductions.github.io/Joaquin.github.io/About)
 
-## Links to emails/socials:
-
-[My Personal Email](mailto:joaquindelosada@hotmail.com?subject=[GitHub]%20Email)
-
-[My University Email](mailto:jd19ul@brocku.ca?subject=[GitHub]%20Email)
-
-[Github account](https://github.com/Montainproductions)
-
-[Itch.IO](https://montain-productions.itch.io/)
-
 ---
 
 ## Game Projects:
-Every since I was young 
+Every since I was young I have always loved playing video games and when I started to make my first few games in 2017 I feel in love with the creation process as well 
 
 
 ### Mining training game
@@ -75,13 +65,5 @@ I made this repository as a way to be able to continuously practice Java Program
 
 ---
 
-
-## Links to emails/socials:
-
-[My Personal Email](mailto:joaquindelosada@hotmail.com?subject=[GitHub]%20Email)
-
-[My University Email](mailto:jd19ul@brocku.ca?subject=[GitHub]%20Email)
-
-[Github account](https://github.com/Montainproductions)
-
-[Itch.IO](https://montain-productions.itch.io/)
+## Contact Me:
+[More About Me](https://montainproductions.github.io/Joaquin.github.io/Contact me)
