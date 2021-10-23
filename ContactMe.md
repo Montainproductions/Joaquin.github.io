@@ -1,5 +1,5 @@
 ---
-layout: "Contact_me"
+layout: "Contactinfo"
 title: Contact_me
 ---
 
