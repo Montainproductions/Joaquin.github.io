@@ -3,14 +3,18 @@
 Hello, I a am Joaquin De Losada a 21 year old American-Peruvian. I am currently in my third year at Brock University studing in the Interactive Arts and Science (IASC). I made this website using markdown and Github pages as a way to bundle all of my projects from both Github and Itch.io together so that it is easier to find everything I have done and how I have improved over time.
 
 ## Links to socials/emails
-
+```Markdown
 Personal email: <joaquindelosada{at}hotmail{.}com>
+
 University Email: <jd19ul{at}brocku{.}com>
 
 [Github account](https://github.com/Montainproductions)
 
 [Itch.IO](https://montain-productions.itch.io/)
+```
+
 ---
+
 
 ## Game Projects:
 
