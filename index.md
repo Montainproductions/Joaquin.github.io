@@ -65,5 +65,4 @@ I made this repository as a way to be able to continuously practice Java Program
 
 ---
 
-## Contact Me:
-[Contact Me](https://montainproductions.github.io/Joaquin.github.io/ContactMe)
+[Contact Page](https://montainproductions.github.io/Joaquin.github.io/ContactMe)
