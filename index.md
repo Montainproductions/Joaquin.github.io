@@ -2,7 +2,7 @@
 
 Hello, I am Joaquin De Losada, a 21 year old American-Peruvian. I am currently in my third year at Brock University studying in the Interactive Arts and Science (IASC). I made this website using markdown and Github pages as a way to bundle all of my projects from both Github and Itch.io together so that it is easier to find everything I have done and how I have improved over time.
 
-## Links to emails/socials
+## Links to emails/socials:
 
 [My Personal Email](mailto:joaquindelosada@hotmail.com?subject=[GitHub]%20Email)
 
@@ -15,6 +15,8 @@ Hello, I am Joaquin De Losada, a 21 year old American-Peruvian. I am currently i
 ---
 
 ## Game Projects:
+Every since I was young 
+
 
 ### Mining training game
 This game is a project that I created during an internship at a mining company in Peru. The project along with the game was to see the feasibility of having a simulation of the company's mine as a way to train the mine workers on different mine safety protocols. During the entire project I made a basic GDD, and a beta version of the game so that upper management could see how a partially complete game would look and if it would be worth investing more money on actual developers to make a complete game.
@@ -55,7 +57,7 @@ Release Date: February 2017
 
 ---
 
-## Repositories
+## Repositories:
 I also have made a few repositories in the past year where I have uploaded different projects I am working on as a way to present my code and for people to have a better idea about how I program and how proficient I currently am with programming. The main repositories that I have are the "Don't Fail the class" unity repo and the Java Programming repo. Both of which I believe best present my skills.
 
 
@@ -70,3 +72,14 @@ I made this repository as a way to be able to continuously practice Java Program
 [Link to Repository](https://github.com/Montainproductions/Java-Programming-Practice)
 
 ---
+
+
+## Links to emails/socials:
+
+[My Personal Email](mailto:joaquindelosada@hotmail.com?subject=[GitHub]%20Email)
+
+[My University Email](mailto:jd19ul@brocku.ca?subject=[GitHub]%20Email)
+
+[Github account](https://github.com/Montainproductions)
+
+[Itch.IO](https://montain-productions.itch.io/)
