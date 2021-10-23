@@ -2,18 +2,17 @@
 
 Hello, I a am Joaquin De Losada a 21 year old American-Peruvian. I am currently in my third year at Brock University studing in the Interactive Arts and Science (IASC). I made this website using markdown and Github pages as a way to bundle all of my projects from both Github and Itch.io together so that it is easier to find everything I have done and how I have improved over time.
 
-## Links to socials/emails
+## Links to emails/socials
 
-[My Personal Email](mailto:joaquindelosada@hotmail.com?subject=[GitHub]%20Source%20Han%20Sans)
+[My Personal Email](mailto:joaquindelosada@hotmail.com?subject=[GitHub]%20Email)
 
-[My University Email](mailto:jd19ul@brocku.ca?subject=[GitHub]%20Source%20Han%20Sans)
+[My University Email](mailto:jd19ul@brocku.ca?subject=[GitHub]%20Email)
 
 [Github account](https://github.com/Montainproductions)
 
 [Itch.IO](https://montain-productions.itch.io/)
 
 ---
-
 
 ## Game Projects:
 
@@ -57,7 +56,7 @@ Release Date: February 2017
 ---
 
 ## Repositories
-I also have made diffrent repositories where I have uploaded diffrent projects I have or am currently working on as a way to show how I would solve diffrent problems.
+I also have made diffrent repositories where I have uploaded diffrent projects I have or am currently working on as a way to show how I would solve diffrent programming problems.
 
 
 ### Dont Fail the class Game
