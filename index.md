@@ -7,7 +7,7 @@ Hello, I am Joaquin De Losada, a 21 year old American-Peruvian. I am currently i
 ---
 
 ## Game Projects:
-Every since I was young I have always loved playing video games and when I started to make my first few games in 2017 I feel in love with the creation process as well 
+Every since I was young Ive always loved playing video games and when I had the oportunity to make any thing I wanted I decided to make my own video game which is the maze hunter game and after that I decided that programming and video games was a carrear that I wanted to persue in the future. After that I continued learning more about programming and testing more game ideas that I wanted to work on as a way to gain more experience. The next game I had created and released was a shooting range game where I wanted to practice more with an inventory system and moving inbetween diffrent rooms. After this point I didnt try to release new games but instead try to learn and have a better understanding of proggramming and try diffrent game ideas to see if any would be interesting enough to make a full game while also trying to finish high school. I didnt make another game untill 2021 when I did an internship at a mining companies where they wanted me to create a prototype game about mine safty proticals which was when I decided to learn how a typical game production workflow works so that in the future the company could have as much information they needed to continue the proyect when I am not part of the company anymore.
 
 
 ### Mining training game
