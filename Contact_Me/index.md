@@ -1,8 +1,3 @@
----
-layout: "ContactMe"
-title: Contact_me
----
-
 # Contact Me:
 
 ---

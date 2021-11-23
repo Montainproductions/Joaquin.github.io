@@ -1,8 +1,3 @@
----
-layout: "About"
-title: About Page
----
-
 # About me
 
 ---
