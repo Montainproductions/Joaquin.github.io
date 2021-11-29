@@ -14,8 +14,7 @@ This game is a project that I created during an internship at a mining company i
 
 Important things I learned:
 
-Creating a GDD
-
+- Creating a GDD
 - First full game in Unity
 - Keeping supervisor updated on progress
 - Lighting in Unity
