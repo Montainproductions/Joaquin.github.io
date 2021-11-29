@@ -15,12 +15,9 @@ This game is a project that I created during an internship at a mining company i
 Important things I learned:
 
 Creating a GDD
-
-First full game in Unity
-
-Keeping supervisor updated on progress
-
-Lighting in Unity
+-First full game in Unity
+-Keeping supervisor updated on progress
+-Lighting in Unity
 
 Release Date: September 2021
 
@@ -31,12 +28,9 @@ Release Date: September 2021
 The second game I started working on shortly after releasing Word Hunter is called Shooting Range. The premise of the game is that the player is in a shooting range and you can buy different weapons and use them to shoot randomly appearing wooden targets. As you destroy the targets you receive more money which can be used to buy the other weapons in the shooting range. This game allowed me to learn how to create a basic inventory system to store and switch between the weapons.
 
 Important things I learned:
-
-Saving info when changing room
-
-A switching inventory
-
-Random spawning
+-Saving info when changing room
+-A switching inventory
+-Random spawning
 
 Release Date: December 2017
 
@@ -47,12 +41,9 @@ Release Date: December 2017
 The first-ever game that I made was called Word Hunter and I made it for a project in school as a way to see if game development and programming, in general, would be something I would be greatly interested in working on in my future. After watching various tutorials and working on the project while in school to make the game. It ended up being a top-down game where the player has to find and collect all of the letters in each maze and once completing the maze and collecting the letters then you would have written a full word. I later released an update to the game in which I added a giant maze where the player can take multiple routes to complete the maze and reach the end.
 
 Important things I learned:
-
-Basic script writing
-
-Importance of preplanning
-
-Basic level design
+-Basic script writing
+-Importance of preplanning
+-Basic level design
 
 Release Date: February 2017
 
