@@ -65,12 +65,6 @@ I made this repository as a way to be able to continuously practice Java Program
 
 [Link to Repository](https://github.com/Montainproductions/Java-Programming-Practice)
 
-### Lighthouse 21 Day challenge
-
-This repo is a collection of all the JavaScript code I write for the Light House 21 day challenge. The Light House 21 day challenge is a challenge that the boot camp company called Light House who are releasing a challenge a day for 21 days straight from November 22 until December 12. This way I can gain a better understanding and practice with JavaScript.
-
-[Link to Repository](https://github.com/Montainproductions/LightHouse_21DayChallenge)
-
 ---
 
 [Contact Page](https://montainproductions.github.io/Joaquin.github.io/Contact_Me)
