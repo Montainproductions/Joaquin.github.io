@@ -8,6 +8,11 @@ Hello, I am Joaquin De Losada, a 22-year-old American-Peruvian. I am currently i
 
 Ever since I was young I've always loved playing video games and when I had the opportunity to make anything I wanted I decided to make my own video game which is the maze hunter game and after that, I decided that programming and video games were a career that I wanted to pursue in the future. After that, I continued learning more about programming and testing more game ideas that I wanted to work on as a way to gain more experience. The next game I had created and released was a shooting range game where I wanted to practice more with an inventory system and moving between different rooms. After this point, I didn't try to release new games but instead try to learn and have a better understanding of programming and try different game ideas to see if any would be interesting enough to make a full game while also trying to finish high school. I didn't make another game until 2021 when I did an internship at a mining company where they wanted me to create a prototype game about mine safety protocols which was when I decided to learn how a typical game production workflow works so that in the future the company could have as much information they needed to continue the project when I am not part of the company anymore.
 
+
+### Don't Fail the class Game
+
+This repository is for a group project that I and some classmates from the IASC 3F02 class are creating. The project we are working on is a 2.5d pixel art game in unity where the player is trying to finish the 9th grade while fighting bullies, bosses, and challenges in the different classes. The game is planned to be a beta version of the game with only one school year as a way to see how fun and interesting a game with this option can be. At the same time, this allows me to learn how to better work collaboratively in a design/creative environment so that I am better prepared for when I start working in other industries as part of my work.
+
 ### Mining training game
 
 This game is a project that I created during an internship at a mining company in Peru. The project along with the game was to see the feasibility of having a simulation of the company’s mine as a way to train the mine workers on different mine safety protocols. During the entire project, I made a basic GDD, and a beta version of the game so that upper management could see how a partially complete game would look and if it would be worth investing more money in actual developers to make a complete game.
@@ -34,6 +39,7 @@ Important things I learned:
 
 Release Date: December 2017
 
+[Link to gameplay video](https://youtu.be/whS7SdlDpFc)
 [Link to game](https://montain-productions.itch.io/shooting-range)
 
 ### Word Hunter
@@ -47,17 +53,13 @@ Important things I learned:
 
 Release Date: February 2017
 
+[Link to gameplay video](https://youtu.be/s2AL4so64vw)
 [Link to game](https://montain-productions.itch.io/word-hunter)
+
 
 ## Repositories:
 
 I also have made a few repositories in the past year where I have uploaded different projects I am working on as a way to present my code and for people to have a better idea about how I program and how proficient I currently am with programming. The main repositories that I have are the “Don’t Fail the class” unity repo and the Java Programming repo. Both of which I believe best present my skills.
-
-### Don't Fail the class Game
-
-This repository is for a group project that I and some classmates from the IASC 3F02 class are creating. The project we are working on is a 2.5d pixel art game in unity where the player is trying to finish the 9th grade while fighting bullies, bosses, and challenges in the different classes. The game is planned to be a beta version of the game with only one school year as a way to see how fun and interesting a game with this option can be. At the same time, this allows me to learn how to better work collaboratively in a design/creative environment so that I am better prepared for when I start working in other industries as part of my work.
-
-[Link to Repository](https://github.com/Montainproductions/LightHouse_21DayChallenge)
 
 ### Java Programming practice
 
