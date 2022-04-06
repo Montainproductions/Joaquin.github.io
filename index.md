@@ -26,7 +26,7 @@ Important things I learned:
 
 Release Date: September 2021
 
-[Link to gameplay video](https://youtu.be/22ivlkbYxIc)
+[Link to gameplay video](https://youtu.be/tv1ylTrGzoI)
 [Link to game](https://montain-productions.itch.io/untitled-safty-mining-game)
 
 ### Shooting Range
