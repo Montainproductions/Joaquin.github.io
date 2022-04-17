@@ -15,7 +15,7 @@ This repository is for a group project that I and some classmates from the IASC 
 
 Important Things I learned:
 
-- Communication inbetween disiplean on what is required.
+- Communication inbetween disciplines when working on a project together.
 - Better understanding of pre-production for a game.
 - Leearned how to create AI and how to make them more life like.
 
