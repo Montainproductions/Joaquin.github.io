@@ -13,6 +13,15 @@ Ever since I was young I've always loved playing video games and when I had the 
 
 This repository is for a group project that I and some classmates from the IASC 3F02 class are creating. The project we are working on is a 2.5d pixel art game in unity where the player is trying to finish the 9th grade while fighting bullies, bosses, and challenges in the different classes. The game is planned to be a beta version of the game with only one school year as a way to see how fun and interesting a game with this option can be. At the same time, this allows me to learn how to better work collaboratively in a design/creative environment so that I am better prepared for when I start working in other industries as part of my work.
 
+Important Things I learned:
+
+- Communication inbetween disiplean on what is required.
+- Better understanding of pre-production for a game.
+- Leearned how to create AI and how to make them more life like.
+
+[Trailer](https://www.youtube.com/watch?v=avRjRtBwG70)
+[Link to game](https://montain-productions.itch.io/dont-fail-the-course)
+
 ### Mining training game
 
 This game is a project that I created during an internship at a mining company in Peru. The project along with the game was to see the feasibility of having a simulation of the company’s mine as a way to train the mine workers on different mine safety protocols. During the entire project, I made a basic GDD, and a beta version of the game so that upper management could see how a partially complete game would look and if it would be worth investing more money in actual developers to make a complete game.
