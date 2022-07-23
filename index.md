@@ -17,7 +17,7 @@ Important Things I learned:
 
 - Communication inbetween disciplines when working on a project together.
 - Better understanding of pre-production for a game.
-- Leearned how to create AI and how to make them more life like.
+- Learned how to create AI and how to make them more life like.
 
 [Trailer](https://www.youtube.com/watch?v=avRjRtBwG70)
 [Link to game](https://montain-productions.itch.io/dont-fail-the-course)
