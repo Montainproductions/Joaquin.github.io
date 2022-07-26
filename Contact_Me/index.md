@@ -4,9 +4,6 @@
 
 ## Emails:
 
-[My Personal Email:](mailto:joaquindelosada@hotmail.com?subject=[GitHub]%20Email) 
-joaquindelosada{at}hotmail{.}com
-
 [My University Email:](mailto:jd19ul@brocku.ca?subject=[GitHub]%20Email)  jd19ul{at}brocku{.}ca
 
 ## GitHub
