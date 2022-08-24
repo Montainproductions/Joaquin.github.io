@@ -66,17 +66,6 @@ Release Date: February 2017
 [Link to gameplay video](https://youtu.be/s2AL4so64vw)
 [Link to game](https://montain-productions.itch.io/word-hunter)
 
-
-## Repositories:
-
-I also have made a few repositories in the past year where I have uploaded different projects I am working on as a way to present my code and for people to have a better idea about how I program and how proficient I currently am with programming. The main repositories that I have are the “Don’t Fail the class” unity repo and the Java Programming repo. Both of which I believe best present my skills.
-
-### Java Programming practice
-
-I made this repository as a way to be able to continuously practice Java Programming. I got most of the challenges from the website “Kattis, Kattis” and slowly tried to get harder options as a way to continuously try to challenge myself. I later started to work on a basic Java GUI system as a way to both practices how to make some basic GUI and to make an easier way to interact with all of the challenges that I complete in a more convenient manner instead of having to go through my code to try and find and run the specific challenge that I might have completed already.
-
-[Link to Repository](https://github.com/Montainproductions/Java-Programming-Practice)
-
 ---
 
 [Contact Page](https://montainproductions.github.io/Joaquin.github.io/Contact_Me)
