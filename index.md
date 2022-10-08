@@ -18,6 +18,8 @@ Important things I learned:
 
 [Github Repo](https://github.com/Montainproductions/AI-Game)
 
+[Design Document](https://docs.google.com/document/d/1hRznb8RsCPGlu8isXaYCOTSUT3npHfAZLWOou7tlnAs/edit?usp=sharing)
+
 ### Don't Fail the class Game
 
 This project from a game that I had made in conjuntion other classmates from the IASC 3F02 class that I took in my third year of univeristy (2021-2022). The project we are working on is a 2.5d pixel art game in Unity where the player is trying to finish the 9th grade while fighting bullies, bosses, and challenges in the different classes. The game is planned to be a beta version of the game with only one school year as a way to see how fun and interesting a game with this option can be. At the same time, this allows me to learn how to better work collaboratively in a design/creative environment so that I am better prepared for when I start working in other industries as part of my work.
