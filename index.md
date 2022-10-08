@@ -8,10 +8,19 @@ Hello, I am Joaquin De Losada, a 22-year-old American-Peruvian. I am currently i
 
 Ever since I was young I've always loved playing video games and when I had the opportunity to make anything I wanted I decided to make my own video game which is the maze hunter game and after that, I decided that programming and video games were a career that I wanted to pursue in the future. After that, I continued learning more about programming and testing more game ideas that I wanted to work on as a way to gain more experience. The next game I had created and released was a shooting range game where I wanted to practice more with an inventory system and moving between different rooms. After this point, I didn't try to release new games but instead try to learn and have a better understanding of programming and try different game ideas to see if any would be interesting enough to make a full game while also trying to finish high school. I didn't make another game until 2021 when I did an internship at a mining company where they wanted me to create a prototype game about mine safety protocols which was when I decided to learn how a typical game production workflow works so that in the future the company could have as much information they needed to continue the project when I am not part of the company anymore.
 
+### AI Unreal project (In the works)
+
+This project is a way for me to practice two improtant skills in my eyes as part of my preperation for my future career. For starters, over the past year I have become more invested in working with AI for video games and while look at my course load for my final year at Brock University I realized that I could take a Directed studies project class which allows me with the help of a professor work on a project that improves my skills. Which lead me to take the class through out the year (Normally only one semester) and create a basic shotter game which contains two diffrent types of AI, a Finite State Machine (FSM) and a behavior tree. Meanwhile I plan to make this game in Unreal Engine 5 as a way to test my ability to change systems and programming language (From mostly Unity and C# to Unreal and C++).
+
+Important things I learned:
+
+- Standard AI systems.
+
+[Github Repo](https://github.com/Montainproductions/AI-Game)
 
 ### Don't Fail the class Game
 
-This repository is for a group project that I and some classmates from the IASC 3F02 class are creating. The project we are working on is a 2.5d pixel art game in unity where the player is trying to finish the 9th grade while fighting bullies, bosses, and challenges in the different classes. The game is planned to be a beta version of the game with only one school year as a way to see how fun and interesting a game with this option can be. At the same time, this allows me to learn how to better work collaboratively in a design/creative environment so that I am better prepared for when I start working in other industries as part of my work.
+This project from a game that I had made in conjuntion other classmates from the IASC 3F02 class that I took in my third year of univeristy (2021-2022). The project we are working on is a 2.5d pixel art game in Unity where the player is trying to finish the 9th grade while fighting bullies, bosses, and challenges in the different classes. The game is planned to be a beta version of the game with only one school year as a way to see how fun and interesting a game with this option can be. At the same time, this allows me to learn how to better work collaboratively in a design/creative environment so that I am better prepared for when I start working in other industries as part of my work.
 
 Important Things I learned:
 
