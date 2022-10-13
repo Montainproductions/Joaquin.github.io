@@ -16,6 +16,8 @@ Important things I learned:
 
 - Standard AI systems.
 
+Release Date: Not released yet
+
 [Github Repo](https://github.com/Montainproductions/AI-Game)
 
 [Design Document](https://docs.google.com/document/d/1hRznb8RsCPGlu8isXaYCOTSUT3npHfAZLWOou7tlnAs/edit?usp=sharing)
@@ -30,7 +32,10 @@ Important Things I learned:
 - Better understanding of pre-production for a game.
 - Learned how to create AI and how to make them more life like.
 
+Release Date: April 2022
+
 [Trailer](https://www.youtube.com/watch?v=avRjRtBwG70)
+
 [Link to game](https://montain-productions.itch.io/dont-fail-the-course)
 
 ### Mining training game
@@ -47,6 +52,7 @@ Important things I learned:
 Release Date: September 2021
 
 [Link to gameplay video](https://youtu.be/tv1ylTrGzoI)
+
 [Link to game](https://montain-productions.itch.io/untitled-safty-mining-game)
 
 ### Shooting Range
@@ -61,6 +67,7 @@ Important things I learned:
 Release Date: December 2017
 
 [Link to gameplay video](https://youtu.be/whS7SdlDpFc)
+
 [Link to game](https://montain-productions.itch.io/shooting-range)
 
 ### Word Hunter
@@ -75,6 +82,7 @@ Important things I learned:
 Release Date: February 2017
 
 [Link to gameplay video](https://youtu.be/s2AL4so64vw)
+
 [Link to game](https://montain-productions.itch.io/word-hunter)
 
 ---
