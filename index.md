@@ -18,7 +18,7 @@ Important things I learned:
 
 Release Date: Not released yet
 
-[Github Repo](https://github.com/Montainproductions/AI-Game)
+Github Repo - Currently Private
 
 [Design Document](https://docs.google.com/document/d/1hRznb8RsCPGlu8isXaYCOTSUT3npHfAZLWOou7tlnAs/edit?usp=sharing)
 
