@@ -10,11 +10,12 @@ Ever since I was young I've always loved playing video games and when I had the 
 
 ### AI Unreal project (In the works)
 
-This project is a way for me to practice two improtant skills in my eyes as part of my preperation for my future career. For starters, over the past year I have become more invested in working with AI for video games and while look at my course load for my final year at Brock University I realized that I could take a Directed studies project class which allows me with the help of a professor work on a project that improves my skills. Which lead me to take the class through out the year (Normally only one semester) and create a basic shotter game which contains two diffrent types of AI, a Finite State Machine (FSM) and a behavior tree. Meanwhile I plan to make this game in Unreal Engine 5 as a way to test my ability to change systems and programming language (From mostly Unity and C# to Unreal and C++).
+This project is a way for me to practice two important skills in my eyes as part of my preparation for my future career. For starters, over the past year, I have become more invested in working with AI for video games, and while looking at my course load for my final year at Brock University I realized that I could take a Directed studies project class which allows me with the help of a professor working on a project that improves my skills. This lead me to take the class throughout the year (Normally only one semester) and create a basic shooter game that contains two different types of AI, a Finite State Machine (FSM) and a behavior tree. Meanwhile, I plan to make this game in Unreal Engine 5 as a way to test my ability to change systems and programming language (From mostly Unity and C# to Unreal and C++). I understand that this will be a hard challenge but I wish to learn as much as possible in the time I have to be better prepared for the future as I enter the industry.
 
 Important things I learned:
 
 - Standard AI systems.
+- Project in progres so I am still learning
 
 Release Date: Not released yet
 
@@ -24,7 +25,7 @@ Github Repo - Currently Private
 
 ### Don't Fail the class Game
 
-This project from a game that I had made in conjuntion other classmates from the IASC 3F02 class that I took in my third year of univeristy (2021-2022). The project we are working on is a 2.5d pixel art game in Unity where the player is trying to finish the 9th grade while fighting bullies, bosses, and challenges in the different classes. The game is planned to be a beta version of the game with only one school year as a way to see how fun and interesting a game with this option can be. At the same time, this allows me to learn how to better work collaboratively in a design/creative environment so that I am better prepared for when I start working in other industries as part of my work.
+This project from a game that I had made in conjunction with other classmates from the IASC 3F02 class that I took in my third year of university (2021-2022). The game we decided to make is a 2.5d pixel art game in Unity where the player is trying to finish the 9th grade of school while fighting bullies, bosses, and challenges in the different classes. Because of the group's skill level and the time given to us we planned to have the game released in an open beta state and attempt to make it as polished as we could with our skill sets. At the same time, this allowed us to learn more about the whole design and production process of making a game and what to expect if we were to make another game together or with other people. This also taught us how to better work in an interdisciplinary fashion and how to communicate with each other and work with different skill levels.
 
 Important Things I learned:
 
@@ -57,7 +58,7 @@ Release Date: September 2021
 
 ### Shooting Range
 
-The second game I started working on shortly after releasing Word Hunter is called Shooting Range. The premise of the game is that the player is in a shooting range and you can buy different weapons and use them to shoot randomly appearing wooden targets. As you destroy the targets you receive more money which can be used to buy the other weapons in the shooting range. This game allowed me to learn how to create a basic inventory system to store and switch between the weapons.
+The second game I started working on shortly after releasing Word Hunter is called Shooting Range. The premise of the game is that the player is in a shooting range and you can buy different weapons and use them to shoot randomly appearing wooden targets. As you destroy the targets you receive more money which can be used to buy the other weapons in the shooting range. This game allowed me to learn how to create a basic inventory system to store and switch between weapons.
 
 Important things I learned:
 - Saving info when changing room
@@ -89,11 +90,12 @@ Release Date: February 2017
 
 ## Repository
 
-Set of repositories that I have worked on over the years that can better show my programming skills.
+Repositories that I have worked on over time that can demonstrate my programming skills.
 
-### Cosc 2P03 Advance data structure
+### COSC 2P03 Advance Data Structure
 
-Recently as part of my class load I took a computer science class called advance data structure which taught students how to write diffrent types of data structures using Java. As part of the course I worked on heaps, Linked lists and other types of data structures that I was given permission to place in a public github repo to show my programming skills. As part of the repo I have added descriptions of each assignment and how I felt I did in conjunction with what parts of the assignment I got wrong with my final grade for said assignment.
+Recently as part of my class load I took a computer science class called Advanced Data Structure which taught students how to write different types of data structures using Java. As part of the course, I worked on heaps, Linked lists, and other types of data structures that I was given permission to place in a public GitHub repo to show my programming skills. As part of the Repo, I have added descriptions of each assignment and how I felt I did in conjunction with what parts of the assignment I got wrong with my final grade for said assignment.
+
 
 [Link to Repo](https://github.com/Montainproductions/Java-2P03-Assignemnts)
 
