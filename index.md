@@ -87,4 +87,15 @@ Release Date: February 2017
 
 ---
 
+## Repository
+
+Set of repositories that I have worked on over the years that can better show my programming skills.
+
+### Cosc 2P03 Advance data structure
+
+Recently as part of my class load I took a computer science class called advance data structure which taught students how to write diffrent types of data structures using Java. As part of the course I worked on heaps, Linked lists and other types of data structures that I was given permission to place in a public github repo to show my programming skills. As part of the repo I have added descriptions of each assignment and how I felt I did in conjunction with what parts of the assignment I got wrong with my final grade for said assignment.
+
+[Link to Repo](https://github.com/Montainproductions/Java-2P03-Assignemnts)
+
+---
 [Contact Page](https://montainproductions.github.io/Joaquin.github.io/Contact_Me)
