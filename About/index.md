@@ -1,9 +1,0 @@
-# About me
-
----
-
-Hello, I am Joaquin De Losada, a 22-year-old American-Peruvian. I am currently in my third year at Brock University studying Interactive Arts and Science (IASC). I made this website using markdown and Github pages as a way to bundle all of my projects from both Github and Itch.io together so that it is easier to find everything I have done and how I have improved over time. I originally was born in Maryland, U.S.A in November 2021 and because of my dad's work, I ended up moving around in the U.S for about 8 years until my family decided to move back to Peru so that we could be together with my extended family. After that, I spent the rest of my school life in Peru studying and making a life there. During this time my dad started to present some old games including Age of Empires 2, Super Mario 64, and Myst while I also started playing a wider variety of games allowing me to grow my passion for playing video games.
-
-I continued playing video games and during middle school as part of a school project where I was given the opportunity to work on any project I wanted I decided I wanted to make a game as a way to see if this is something I would really be interested in making. After working on the game for about 5 months I found that the creation process was extremely interesting and fun to do even when most of the time was spent trying to learn how to program and the basics of game design. Once I completed the game I continued playing games and learning how to program and make games to the point that when deciding what university and carrier I wanted to follow after high school. After applying to different universities I decided to go to the IASC program at Brock University since this would allow me the versatility of being able to apply to different fields of work in the future while also allowing me to follow my passion of making video games.
-
----

@@ -1,0 +1,52 @@
+body {
+    background-color: #000000;
+    color: #519c10;
+    font-family: monospace;
+}
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .ledgerTerminal{
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #333;
+    margin-top: 50px;
+  }
+  .terminal {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px #333;
+    margin-top: 50px;
+  }
+.typed-text {
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #519c10;
+    margin-bottom: 20px;
+}
+.smallertyped-text {
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #519c10;
+    margin-bottom: 10px;
+}
+  .highlight-box {
+    width: 300px;
+    height: 200px;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+  }
+a {
+    color: #519c10;
+}
+  .highlight-box:hover {
+    background-color: rgba(0, 255, 0, 0.5);
+  }
