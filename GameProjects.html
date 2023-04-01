@@ -14,8 +14,22 @@
         </div>
         <div class="container">
             <div class="terminal">
-                <p class="typed-text">Unity projects</p>
+                <p class="typed-text">Game projects</p>
                 <p>Ever since I was in the 10th grade, I found a passion for making video games and have, over the years, I have completed various games both alone and as part of a group, which has allowed me to learn a lot about the game creation process. These games best exemplify how I can program either alone or as part of a larger team with other people to achieve a goal common goal.</p>
+
+                <p class="smallertyped-text">Ubisoft Next Competion</p>
+                <p>
+                    <video width="640" height="360" controls>
+                        <source src="DrillPerson Ubisoft Next Gameplay.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </p>
+                <p>Recently I partook in the Ubisoft Next programming competition where I programmed a basic game based using C++ and a basic render provided by Unity. I competed in the Ubisoft next competition as a way to both test myself as well as attempt to learn C++ at the same time.</p>
+                <p>As I worked on the project I was able to combine quick think on my feet with the use my Java and C# knowledge as well as searching for c++ specific knowledge to put together the project. By doing this I was able to make a basic game where the player would spawn into a 15X15 map with various green destructible boxes scattered around with red indestructible boxes serving as walls. The goal is that the player is attempting to control their fast drill to destroy as many of the green boxes as possible to increase their points before the timer runs out and then proceed to the next level. With every few levels the amount of time left for the player is reduced until they might not have enough time to complete a lot of the maze.</p>
+                <p>Something I am proud about in the project is the level creation method as it is set up in a way that would allow it to create a new level each time the player goes to the next level or starts a new game. It is set up with a 2d array data type position which contains a x and y pixel position as well as a string with the object that is contained in the position. I proceed to go through the 2d array and place all of the walls that the player cant pass through both around the border and in the middle of the map itself. I proceed to determine if the current Position contains the string "Empty" to then return a number using a random method C++ has as part of their library and the current time as a seed to help with the randomness. If the number turns out to be less than 1/4 the max number that the seeded random can return (In this case is 32767) it will then set the Position as a breakable wall that the player can break to gain points and continue on with the level. Because of the chances that two people will start a new game or level at the same time it allows for the level creator the ability to seemingly create a new level each time.</p>
+                <p>One way I could improve on the random number generator is by taking in account the current level, how many destructible walls have already been created in the level and the current position that the level created is looking at. This would allow for even more random levels as the chances that the combination of all these different variables can be achieved together would be difficult to achieve and allow for each new level someone plays to be unique to their playthrough.</p>
+
+                <div class="linedivider"></div>
 
                 <p class="smallertyped-text">AI learning project (In the works)</p>
                 <p>Throughout my time at Brock university, I became more interested in AI systems in games and how well-implemented AI allows the rest of the game features to shine even better. This meant that when I learned about a semester-long course that allowed me to work on any project, I wanted that would expand my skill set, I decided to take it and focus on designing and programming as interesting AI systems as possible.</p>
