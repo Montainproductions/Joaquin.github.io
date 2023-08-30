@@ -1,83 +1,93 @@
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html>
     <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MWFY5V5T93"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-9G0JXDR7QF');
-        </script>
         <title>Joaquin De Losada</title>
     </head>
-  <body>
-    <h1><a class="button button3" href="index.html">Joaquin De Losada</a></h1>
-    <div class="container">
-        <div class = "ledgerTerminal">
-            <div class = "typed-text">
-                <a class="button button1" href ="AboutMe.html">More about me</a> <a class="button button1" href="GameProjects.html">Game Projects</a> <a class="button button1" href="AI.html">AI projects</a> <a class="button button1" href="ContactMe.html">Contact Me</a>
-</div>
+    <body>
+        <h1><button class="button3" href="index.html">Joaquin De Losada</button></h1>
+        <div class="container">
+            <div class="ledgerTerminal">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="button1">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="AboutMe.html">More about me</a>
+                        <a href="GameProjects.html">Game Projects</a>
+                        <a href="AI.html">AI projects</a>
+                        <a href="ContactMe.html">Contact Me</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="terminal">
-            <p class="typed-text">Welcome to my page! A bit about me!</p>
-            <p style="font-size: large">Greetings! My name is Joaquin De Losada, and I am a 23-year-old Peruvian enthusiastic about Game Development and AI Systems in video games. Recently, I completed my undergraduate studies at Brock University, majoring in Interactive Arts and Science with a minor in Computer Science. While at university, I engaged in various projects that ignited my passion for game development and AI systems, which I intend to pursue in my future career. Some of the projects I've worked on are on this website, as they demonstrate my programming and game development skillset and wish other people to see what I can do.</p>
-            <a class="button button1" href="AboutMe.html">More about me</a>
+        <div class="container">
+            <div class="terminal">
+                <p class="typed-text">Welcome to my page! A bit about me!</p>
+                <p style="font-size: large">Greetings! My name is Joaquin De Losada, and I am a 23-year-old Peruvian enthusiastic about Game Development and AI Systems in video games. Recently, I completed my undergraduate studies at Brock University, majoring in Interactive Arts and Science with a minor in Computer Science. While at university, I engaged in various projects that ignited my passion for game development and AI systems, which I intend to pursue in my future career. Some of the projects I've worked on are on this website, as they demonstrate my programming and game development skillset and wish other people to see what I can do.</p>
+                <a href="AboutMe.html"><button class="button1NonDropDown">More about me</button> </a>
+            </div>
         </div>
-    </div>
-	<div class="container">
-        <div class="terminal">
-            <p class="typed-text"><a class="button button2" href="AI.html">AI Related Projects</a></p>
-            <p style="font-size: large">The following section is a collection of the AI-related project I've worked on over the past few years. The AI I have the greatest passion for working on is NPC systems and gameplay-related AI systems. I started working on AI systems to understand how AI systems work in strategy games like Age of Empires 2 and a youtube channel called "AI and Games." Even though I am early in my career, I have some project ideas revolving around a behavior tree in Unity and procedurally generated puzzle games.</p>
+        <div class="container">
+            <div class="terminal">
+                <a href="AI.html"><button class="button2">AI Related Projects</button></a>
+                
+                <p style="font-size: large">The following section is a collection of the AI-related project I've worked on over the past few years. The AI I have the greatest passion for working on is NPC systems and gameplay-related AI systems. I started working on AI systems to understand how AI systems work in strategy games like Age of Empires 2 and a youtube channel called "AI and Games." Even though I am early in my career, I have some project ideas revolving around a behavior tree in Unity and procedurally generated puzzle games.</p>
 
-            <div class="linedivider"></div>
+                <div class="linedivider"></div>
 
-            <p class="smallertyped-text">Finite State Machine (FSM) NPC in Unity</p>
-            <p>
-                <video width="640" height="360" controls>
-                    <source src="Files/AI FSM/StatesShowcase.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </p>
-            <p style="font-size: large">This project arises from a passion I have gained in the past few years around understanding and working on AI NPC systems for games. During this time, I've better understood how systems like Finite State Machines, Behavior Trees, and others have evolved over the years and shaped the gaming industry. After some time, I decided that the best course of action as a programmer would be implementing some of the systems myself. The main plan was to spend some months designing and making an AI NPC system. Allowing me to understand better the process that AI/Gameplay programmers and designers would go through when working on the AI systems for a game.</p>
-            <a class="button button1" href="https://docs.google.com/document/d/1hRznb8RsCPGlu8isXaYCOTSUT3npHfAZLWOou7tlnAs/edit?usp=sharing">Design Document</a>
-            <a class="button button1" href="https://github.com/Montainproductions/FPCharacter-Unity/tree/AI-Unity-Project">Github Repo</a>
+                <p class="smallertyped-text">Finite State Machine (FSM) NPC in Unity</p>
+                
+                <p>
+                    <video width="640" height="360" controls>
+                        <source src="Files/AI FSM/StatesShowcase.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </p>
+
+                <p style="font-size: large">This project arises from a passion I have gained in the past few years around understanding and working on AI NPC systems for games. During this time, I've better understood how systems like Finite State Machines, Behavior Trees, and others have evolved over the years and shaped the gaming industry. After some time, I decided that the best course of action as a programmer would be implementing some of the systems myself. The main plan was to spend some months designing and making an AI NPC system. Allowing me to understand better the process that AI/Gameplay programmers and designers would go through when working on the AI systems for a game.</p>
+                
+                <a href="https://docs.google.com/document/d/1hRznb8RsCPGlu8isXaYCOTSUT3npHfAZLWOou7tlnAs/edit?usp=sharing"><button class="button1">Design Document</button></a>
+                <a href="https://github.com/Montainproductions/AI-NPC-Implementation"><button class="button1">Github Repo</button></a>
+            </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="terminal">
-            <a class="button button2" href="GameProjects.html">Game projects</a>
-            <p style="font-size: large">Below are some projects I've worked on over the years in unity that I've worked on in groups and alone as a solo dev. If you are interested in reading more about the projects, you can visit my Unity project page, where I go into deeper detail on what I've worked on in each project.</p>
+        <div class="container">
+            <div class="terminal">
+                <a href="GameProjects.html"><button class="button2">Game projects</button></a>
+                
+                <p style="font-size: large">Below are some projects I've worked on over the years in unity that I've worked on in groups and alone as a solo dev. If you are interested in reading more about the projects, you can visit my Unity project page, where I go into deeper detail on what I've worked on in each project.</p>
 
-            <div class="linedivider"></div>
+                <div class="linedivider"></div>
 
-            <p class="smallertyped-text">Ubisoft Next Competion</p>
-            <p>
-                <video width="640" height="360" controls>
-                    <source src="Files/DrillPerson Ubisoft Next Gameplay.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </p>
-            <p style="font-size: large">Recently I partook in the Ubisoft Next Programming competition where I programmed a basic bomberman style game using C++ and a basic render provided by Ubisoft. I had done this as a way to test my C++ skills in a simple 72 hour project. Through out the competition I was able to use my knowladge of C++ as well as other programming languages to solve most challenges that would appear during the 72 hours.</p>
+                <p class="smallertyped-text">Ubisoft Next Competion</p>
+                
+                <p>
+                    <video width="640" height="360" controls>
+                        <source src="Files/DrillPerson Ubisoft Next Gameplay.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </p>
 
-            <p><a class="button button1" href="https://github.com/Montainproductions/Ubisoft-Next-Programming-March-2023">GitHub Repo</a></p>
+                <p style="font-size: large">Recently I partook in the Ubisoft Next Programming competition where I programmed a basic bomberman style game using C++ and a basic render provided by Ubisoft. I had done this as a way to test my C++ skills in a simple 72 hour project. Through out the competition I was able to use my knowladge of C++ as well as other programming languages to solve most challenges that would appear during the 72 hours.</p>
 
-            <div class="linedivider"></div>
+                <a href="https://github.com/Montainproductions/Ubisoft-Next-Programming-March-2023"><button class="button1">GitHub Repo</button></a>
 
-            <p class="smallertyped-text">Dont fail the course</p>
-            <p style="font-size: large">Release Date: April 2022</p>
-            <p>
-                <video width="640" height="360" controls>
-                    <source src="Files/DontFail/Don't Fail The Course - Rough Draft Trailer 1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </p>
-            <p style="font-size: large">As part of my third year at Brock, I took a course that allowed me to work in a group to go through the entire production process for a project. For the project, our group decided to make a simple 2.5D game where you played as a student trying to finish their scheduled classes by fighting professors and students or solving puzzles.</p>
-            <a class="button button1" href="https://montain-productions.itch.io/dont-fail-the-course">Download game here</a>
+                <div class="linedivider"></div>
+
+                <p class="smallertyped-text">Dont fail the course</p>
+                <p style="font-size: large">Release Date: April 2022</p>
+                
+                <p>
+                    <video width="640" height="360" controls>
+                        <source src="Files/DontFail/Don't Fail The Course - Rough Draft Trailer 1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </p>
+                
+                <p style="font-size: large">As part of my third year at Brock, I took a course that allowed me to work in a group to go through the entire production process for a project. For the project, our group decided to make a simple 2.5D game where you played as a student trying to finish their scheduled classes by fighting professors and students or solving puzzles.</p>
+                <a href="https://montain-productions.itch.io/dont-fail-the-course"><button class="button1">Download game here</button></a>
+            </div>
         </div>
-    </div>
-  </body>
+        <script src="js/script.js"></script>
+    </body>
 </html>
