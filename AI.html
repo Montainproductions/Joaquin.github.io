@@ -1,56 +1,56 @@
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
 <html>
     <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MWFY5V5T93"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-9G0JXDR7QF');
-        </script>
         <title>Joaquin De Losada</title>
     </head>
     <body>
-        <h1><a class="button button3" href="index.html">Joaquin De Losada</a></h1>
-    </body>
-    <div class="container">
-        <div class="ledgerTerminal">
-            <div class= "typed-text">
-                <a class="button button1" href="AboutMe.html">More about me</a>  <a class="button button1" href="GameProjects.html">Game Projects</a>  <a class="button button1" href="AI.html">AI projects</a> <a class="button button1" href="ContactMe.html">Contact Me</a>
+        <h1><a href="index.html"><button class="button3">Joaquin De Losada</button></a></h1>
+        <div class="container">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="button1">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="AboutMe.html">More about me</a>
+                    <a href="GameProjects.html">Game Projects</a>
+                    <a href="AI.html">AI projects</a>
+                    <a href="ContactMe.html">Contact Me</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="terminal">
-            <p class="typed-text">AI Projects</p>
-            
-            <p class="smallertyped-text">Finite State Machine (FSM) NPC in Unity</p>
-            
-            <p style="font-size: large">Release Date: April 2023</p>
-            
-            <p style="font-size: large">This project stems from my recent passion for understanding AI systems in games and is a career path I intend to continue. Throughout the project, I've gained more profound knowledge and experience in techniques like Finite State Machines (FSM), Behavior Trees, and others that have been able to shape the gaming industry throughout its history. This is something I hope this design dive of my project demonstrates.</p>
-            
-            <p style="font-size: large">The project began by creating a research and design document that helped structure what I had learned throughout the project and plan the AI system. In the PDF document below, I have a collection of the primary research I have been able to do, which includes navigation meshes, FSM, Behavior Trees, and Utility AI, as well as the design of all the states that the NPC would have and related trait systems for the NPCs.</p>
+        <div class="container">
+            <div class="terminal">
+                <p class="typed-text">AI Projects</p>
 
-            <embed src="Files/AI FSM/AI DD.pdf#toolbar=0" type="application/pdf" width="90%" height="600px" />
+                <p class="smallertyped-text">Finite State Machine (FSM) NPC in Unity</p>
 
-            <p style="font-size: large">The NPC system comprises five states: Patrol, Idle, Aggression, Attack, and Cover. Each NPC also has a standard methods script for movement and an AI State Manager for current state control and essential information. Separately, a GameObject named the Director AI manages the NPCs as a group, limiting the number of NPCs in the Attack state to maintain gameplay balance and other important decisions related to all NPCs.</p>
-            
-            <p style="font-size: large">The NPCs start in the Patrol state with assigned patrol and cover positions. Then, whenever the player enters visual range or fires a weapon nearby, NPCs will transition to an Aggression state. At this point, the NPC calculates a utility value to determine its willingness to attack or seek cover based on player distance and nearby cover points. A higher utility value represents a higher willingness to attack the player and transition to the attack state. The value is stored in the AI State Manager script, and the NPC is added to a list in the Director AI with other NPCs in the Aggression state.</p>
+                <p style="font-size: large">Release Date: April 2023</p>
 
-            <p>
-                <video width="640" height="360" controls>
-                    <source src="Files/AI FSM/StatesShowcase.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </p>
+                <p style="font-size: large">This project stems from my recent passion for understanding AI systems in games and is a career path I intend to continue. Throughout the project, I've gained more profound knowledge and experience in techniques like Finite State Machines (FSM), Behavior Trees, and others that have been able to shape the gaming industry throughout its history. This is something I hope this design dive of my project demonstrates.</p>
 
-            <p style="font-size: large">The Director AI periodically processes the list above of NPCs in the Aggression state (Currently every 2 seconds). Next, it checks if the current limit of NPCs in the Attack state has been reached; otherwise, it will probabilistically select the Attack or Cover state with a higher utility value with a lower threshold for the Attack state. In the Attack state, the NPC approaches the player if necessary and fires its weapon, while those in the Cover state choose the closest cover point behind a piece of the cover relative to the player. Finally, if the line of sight is lost, the NPCs switch to the Searching state and go to the player's last known position. At which point, if not in range will return to the Patrol state.</p>
+                <p style="font-size: large">The project began by creating a research and design document that helped structure what I had learned throughout the project and plan the AI system. In the PDF document below, I have a collection of the primary research I have been able to do, which includes navigation meshes, FSM, Behavior Trees, and Utility AI, as well as the design of all the states that the NPC would have and related trait systems for the NPCs.</p>
 
-            <p><a class="button button1" href="https://docs.google.com/document/d/1hRznb8RsCPGlu8isXaYCOTSUT3npHfAZLWOou7tlnAs/edit?usp=sharing">Design Document</a></p>
-            <p><a class="button button1" href="https://github.com/Montainproductions/FPCharacter-Unity/tree/AI-Unity-Project">Github Repo</a></p>
+                <embed src="Files/AI FSM/AI DD.pdf#toolbar=0" type="application/pdf" width="90%" height="600px" />
+
+                <p style="font-size: large">The NPC system comprises five states: Patrol, Idle, Aggression, Attack, and Cover. Each NPC also has a standard methods script for movement and an AI State Manager for current state control and essential information. Separately, a GameObject named the Director AI manages the NPCs as a group, limiting the number of NPCs in the Attack state to maintain gameplay balance and other important decisions related to all NPCs.</p>
+
+                <p style="font-size: large">The NPCs start in the Patrol state with assigned patrol and cover positions. Then, whenever the player enters visual range or fires a weapon nearby, NPCs will transition to an Aggression state. At this point, the NPC calculates a utility value to determine its willingness to attack or seek cover based on player distance and nearby cover points. A higher utility value represents a higher willingness to attack the player and transition to the attack state. The value is stored in the AI State Manager script, and the NPC is added to a list in the Director AI with other NPCs in the Aggression state.</p>
+
+                <p>
+                    <video width="640" height="360" controls>
+                        <source src="Files/AI FSM/StatesShowcase.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </p>
+
+                <p style="font-size: large">The Director AI periodically processes the list above of NPCs in the Aggression state (Currently every 2 seconds). Next, it checks if the current limit of NPCs in the Attack state has been reached; otherwise, it will probabilistically select the Attack or Cover state with a higher utility value with a lower threshold for the Attack state. In the Attack state, the NPC approaches the player if necessary and fires its weapon, while those in the Cover state choose the closest cover point behind a piece of the cover relative to the player. Finally, if the line of sight is lost, the NPCs switch to the Searching state and go to the player's last known position. At which point, if not in range will return to the Patrol state.</p>
+
+                <p><a href="https://docs.google.com/document/d/1hRznb8RsCPGlu8isXaYCOTSUT3npHfAZLWOou7tlnAs/edit?usp=sharing"><button class="button1">Design Document</button></a></p>
+                <a href="https://github.com/Montainproductions/FPCharacter-Unity/tree/AI-Unity-Project"><button class="button1">Github Repo</button></a>
+            </div>
         </div>
-    </div>
+        <script src="js/script.js"></script>
+    </body>
 </html>

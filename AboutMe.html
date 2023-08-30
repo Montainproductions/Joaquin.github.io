@@ -1,24 +1,22 @@
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MWFY5V5T93"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-9G0JXDR7QF');
-        </script>
         <title>Joaquin De Losada</title>
     </head>
     <body>
-        <h1><a class="button button3" href="index.html">Joaquin De Losada</a></h1>
+        <h1><a href="index.html"><button class="button3">Joaquin De Losada</button></a></h1>
         <div class="container">
-            <div class="ledgerTerminal">
-                <div class= "typed-text">
-                    <a class="button button1" href="AboutMe.html">More about me</a>  <a class="button button1" href="GameProjects.html">Game Projects</a>  <a class="button button1" href="AI.html">AI Projects</a> <a class="button button1" href="ContactMe.html">Contact Me</a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="button1">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="AboutMe.html">More about me</a>
+                    <a href="GameProjects.html">Game Projects</a>
+                    <a href="AI.html">AI projects</a>
+                    <a href="ContactMe.html">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -28,5 +26,6 @@
                 <p style="font-size: large">Hello, I am Joaquin De Losada, a 23-year-old Peruvian. I am in my fourth year at Brock University studying Interactive Arts and Science (IASC). Even though I am in my final year of university, I enjoy working on programming problems, primarily related to AI systems and how they are implemented in games. Over the past year, I've especially enjoyed learning and working on AI systems for games as they allow me to experience the entire game design and creation process while keeping me focused on a smaller area of game creation. My life in Peru has also allowed me to experience many outdoor activities and has created a passion for camping and rock climbing in the wilderness. Because of this passion during my time in Peru, Id previously climbed a roughly 5000-meter mountain and enjoyed it so much that I always wanted to make a similar trip again but to an even higher peak.</p>
             </div>
         </div>
-      </body>
+        <script src="js/script.js"></script>
+    </body>
 </html>

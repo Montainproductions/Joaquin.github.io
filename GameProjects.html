@@ -1,23 +1,22 @@
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
 <html>
     <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MWFY5V5T93"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-9G0JXDR7QF');
-        </script>
         <title>Joaquin De Losada</title>
     </head>
     <body>
-        <h1><a class="button button3" href="index.html">Joaquin De Losada</a></h1>
+        <h1><a href="index.html"><button class="button3">Joaquin De Losada</button></a></h1>
         <div class="container">
-            <div class="ledgerTerminal">
-                <div class= "typed-text">
-                    <a class="button button1" href="AboutMe.html">More about me</a>  <a class="button button1" href="GameProjects.html">Game Projects</a>  <a class="button button1" href="AI.html">AI projects</a> <a class="button button1" href="ContactMe.html">Contact Me</a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="button1">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="AboutMe.html">More about me</a>
+                    <a href="GameProjects.html">Game Projects</a>
+                    <a href="AI.html">AI projects</a>
+                    <a href="ContactMe.html">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -47,7 +46,9 @@
 
                 <p style="font-size: large">One way I could improve on the random number generator is by taking in account the current level, how many destructible walls have already been created in the level and the current position that the level created is looking at. This would allow for even more random levels as the chances that the combination of all these different variables can be achieved together would be difficult to achieve and allow for each new level someone plays to be unique to their playthrough.</p>
 
-                <p><a class="button button1" href="https://github.com/Montainproductions/Ubisoft-Next-Programming-March-2023">GitHub Repo</a></p>
+                <a href="https://github.com/Montainproductions/Ubisoft-Next-Programming-March-2023"><button class="button1">GitHub Repo</button></a>
+
+                <p></p>
 
                 <div class="linedivider"></div>
 
@@ -67,6 +68,10 @@
                 <p style="font-size: large">Meanwhile, as the Technical lead for the project, I was in charge of breaking down the tasks for the distinct mental health conditions I and the other programmer were implementing throughout the project. This was an exciting challenge as this was the first time anyone in the group was working with VR, a skill I've wanted to improve. At the start of the project, as the design team would confirm that certain mental health rooms were finished, I would estimate to the best of my abilities the amount of time needed to complete the task and split them between the other programmer and me. When determining the amount of time it would take to complete the different times correctly, I base it off past experiences working on game and unity projects and then add some extra time as leeway to accommodate better the fact that no one in the group had previous experience in VR, and I had the most experience in Unity from the team. Meanwhile, when dividing up the tasks, as the other programmer didn't have much Unity experience at the start of the project and was taking a university intro class in Unity at that time, I decided to start him off with some of the more straightforward tasks that I know he would benefit from it as he would have some time to learn better the ecosystem of using Unity as well as Github as our git. As he became more comfortable in Unity, I gave him more tasks, and by the end, he was in charge of half of the rooms in the project.</p>
 
                 <p style="font-size: large">After this project, I was able to learn that when it comes to working with VR, it required even more time for many of the tasks than I had initially expected. This project has allowed me to understand better that working in collaboration with other people and on projects with components that I dont have as much experience in might mean having some extra leeway for possible challenges that arise over time.</p>
+
+                <a href="https://github.com/Montainproductions/4L00-VR-Project"><button class="button1">GitHub Repo</button></a>
+
+                <p></p>
 
                 <div class="linedivider"></div>
 
@@ -89,13 +94,15 @@
 
                 <p><img src="Files/DontFail/img2.png" width="500" height="300"></p>
 
-                <a class="button button1" href="https://montain-productions.itch.io/dont-fail-the-course">Download game here</a>
+                <a href="https://montain-productions.itch.io/dont-fail-the-course"><button class="button1">Download game here</button></a>
 
                 <p></p>
+
                 <div class="linedivider"></div>
 
                 <p class="smallertyped-text">Mining safety prototype (Internship project)</p>
                 <p style="font-size: large">Release Date: September 2021</p>
+
                 <p>
                     <video width="640" height="360" controls>
                         <source src="Files/MiningPrototype/Mining Game Training.mp4" type="video/mp4">
@@ -104,9 +111,14 @@
                 </p>
 
                 <p style="font-size: large">As part of a 4-month internship I had done in Peru with a mining company called Consorsio Minero in 2021, I worked on a prototype safety project which was going to be used to determine the viability of creating a full-scale project to train and test people that were about to enter underground mines. I worked on the project in conjunction with other research on new training systems that the company was interested in implementing instead of using the typical PowerPoint presentation system.</p>
+
                 <img src="Files/MiningPrototype/OPKFnV.png" width="500" height="300">
+
                 <p style="font-size: large">Throughout the project, I learned some of the best ways to appropriately document my work so that either future people or people currently at the company could more easily read through what I've worked on and how different sections relate. In addition, as I was working in a mining company, where there isn't as much experience working on similar technical projects like this one, I had to make sure that the people in charge of supervising the project were kept up to date with the progress while also explaining how the progression of similar projects tends to work.</p>
+
+                <p></p>
             </div>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
