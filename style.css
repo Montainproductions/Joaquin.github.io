@@ -62,3 +62,45 @@ a {
 .highlight-box:hover {
     background-color: rgba(0, 255, 0, 0.5);
 }
+
+.button {
+    background-color: #4C5B4D;
+    /*
+        #555153
+        #535551
+        #4C5B4D
+    */
+    border: none;
+    color: #519c10;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button1 {
+    border-radius: 12px;
+    font-size: 19px;
+    margin: 8px 4px;
+}
+
+.button2 {
+    border-radius: 14px;
+    font-size: 24px;
+    margin: 10px 6px;
+}
+
+.button3 {
+    border-radius: 20px;
+    font-size: 32px;
+    margin: 10px 4px;
+}
+
+.button:hover {
+    background-color: #3c7911; /* Change color on hover */
+    /*
+    padding: 8px;
+    margin: 10px 6px;
+    */
+}
