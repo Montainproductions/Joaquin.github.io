@@ -106,13 +106,16 @@ button:hover, button:focus {
 }
 
 .dropdown {
-    position: relative;
+    position: fixed; /* Fixed position */
+    top: 20px; /* Distance from top */
+    right: 20px; /* Distance from right */
     display: inline-block;
 }
 
 .dropdown-content {
     display: none;
-    position: relative;
+    position: fixed;
+    right: 9px;
     background-color: #535551;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
