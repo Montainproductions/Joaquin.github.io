@@ -9,28 +9,169 @@ h1 {
     margin-top: 50px;
 }
 
+a {
+    color: #519c10;
+    text-decoration: none;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
-.ledgerTerminal {
+.terminalBase {
     background-color: #1f1f1f;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px #333;
-    margin-top: 40px;
+    padding: 8px;
+    border-radius: 15px;
 }
 
-.terminal {
-    background-color: #1f1f1f;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 15px #333;
-    margin-top: 40px;
+.terminalSecondLayer {
+    background-color: #2C2C2B;
+    padding: 6px;
+    border-radius: 15px;
 }
 
+.terminalthirdLayer {
+    background-color: #343634;
+    padding: 6px;
+    border-radius: 15px;
+}
+
+.minimizedButtonPromt {
+    background-color: #535551;
+    padding: 6px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.minimizedButtonPromt:hover, .minimizedButtonPromt:focus {
+    background-color: #066832;
+    /*
+    padding: 8px;
+    margin: 10px 6px;
+    */
+}
+
+.buttonImage {
+    position: relative;
+    border-radius: 50%;
+    left: -340px;
+}
+
+.buttonTitleAboutMe {
+    position: relative;
+    left: -250px;
+    top: -70px;
+    font-size: 24px;
+}
+
+.buttonTitleAIProjects {
+    position: relative;
+    left: -176px;
+    top: -70px;
+    font-size: 24px;
+}
+
+.buttonTitleAIProjectsV2 {
+    position: relative;
+    left: -227.5px;
+    top: -70px;
+    font-size: 24px;
+}
+
+.buttonTitleFSM {
+    position: relative;
+    left: -108px;
+    top: -70px;
+    font-size: 24px;
+}
+
+.buttonTitleGameProject {
+    position: relative;
+    left: -215px;
+    top: -70px;
+    font-size: 24px;
+}
+
+.buttonTitleUbisoftNext {
+    position: relative;
+    left: -141px;
+    top: -70px;
+    font-size: 24px;
+}
+
+.buttonTitleDontFail {
+    position: relative;
+    left: -165px;
+    top: -70px;
+    font-size: 24px;
+}
+
+.buttonTitleVR {
+    position: relative;
+    left: 27.5px;
+    top: -60px;
+    font-size: 24px;
+}
+
+.linedividerMain {
+    border-bottom: 2px solid #519c10;
+    position: relative;
+    width: 670px;
+    left: 68px;
+    top: -70px;
+}
+
+.linedividerSlightlySmaller {
+    border-bottom: 2px solid #519c10;
+    position: relative;
+    width: 667.5px;
+    left: 70px;
+    top: -70px;
+}
+
+.linedividerSlightlySmallerV2 {
+    border-bottom: 2px solid #519c10;
+    position: relative;
+    width: 667.5px;
+    left: 70px;
+    top: -82.5px;
+}
+
+.linedividerSlightlySmallerV3 {
+    border-bottom: 2px solid #519c10;
+    position: relative;
+    width: 667.5px;
+    left: 70px;
+    top: -92.5px;
+}
+
+.mainButtonText {
+    position: relative;
+    top: -20px;
+    font-size: 18px;
+}
+
+.mainButtonTextAfterImage {
+    position: relative;
+    top: -5px;
+    font-size: 18px;
+}
+
+.mainButtonReleaseDate {
+    position: relative;
+    top: -70px;
+    font-size: 18px;
+}
+
+.mainButtonReleaseDateV2 {
+    position: relative;
+    top: -60px;
+    font-size: 18px;
+}
+
+//
 .typed-text {
     font-size: 24px;
     padding-bottom: 10px;
@@ -44,19 +185,11 @@ h1 {
     margin-bottom: 3px;
 }
 
-.linedivider {
-    border-bottom: 2px solid #519c10;
-}
-
 .highlight-box {
     width: 300px;
     height: 200px;
     background-color: transparent;
     transition: background-color 0.5s ease;
-}
-
-a {
-    color: #519c10;
 }
 
 .highlight-box:hover {
