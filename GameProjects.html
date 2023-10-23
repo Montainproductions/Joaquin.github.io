@@ -30,7 +30,7 @@
                             <div class="mainButtonText">Ever since I was in the 10th grade, I found a passion for making video games and have, over the years, I have completed various games both alone and as part of a group, which has allowed me to learn a lot about the game creation process. These games best exemplify how I can program either alone or as part of a larger team with other people to achieve a goal common goal.</div>
                         </div>
                         <p></p>
-                        <a id="UbisoftNext"></a>
+                        <a id="UbisoftNext" name="UbisoftNext"></a>
                             <div class="minimizedButtonPromt">
                                 <img src="Files/UbisoftNext.png" width="70" height="90" class="buttonImage">
                                 <div class="buttonTitleUbisoftNext">Ubisoft Next Competition</div>
@@ -51,7 +51,7 @@
                                 
                                 <br><br>
                                 
-                           Something I am proud about in the project is the level creation method as it is set up in a way that would allow it to create a new level each time the player goes to the next level or starts a new game. It is set up with a 2d array data type position which contains a x and y pixel position as well as a string with the object that is contained in the position. I proceed to go through the 2d array and place all of the walls that the player cant pass through both around the border and in the middle of the map itself. I proceed to determine if the current Position contains the string "Empty" to then return a number using a random method C++ has as part of their library and the current time as a seed to help with the randomness. If the number turns out to be less than 1/4 the max number that the seeded random can return (In this case is 32767) it will then set the Position as a breakable wall that the player can break to gain points and continue on with the level. Because of the chances that two people will start a new game or level at the same time it allows for the level creator the ability to seemingly create a new level each time. 
+                            Something I am proud about in the project is the level creation method as it is set up in a way that would allow it to create a new level each time the player goes to the next level or starts a new game. It is set up with a 2d array data type position which contains a x and y pixel position as well as a string with the object that is contained in the position. I proceed to go through the 2d array and place all of the walls that the player cant pass through both around the border and in the middle of the map itself. I proceed to determine if the current Position contains the string "Empty" to then return a number using a random method C++ has as part of their library and the current time as a seed to help with the randomness. If the number turns out to be less than 1/4 the max number that the seeded random can return (In this case is 32767) it will then set the Position as a breakable wall that the player can break to gain points and continue on with the level. Because of the chances that two people will start a new game or level at the same time it allows for the level creator the ability to seemingly create a new level each time. 
                             <br><br> 
                                 
                             <img src="Files/UbisoftNext.png" width="500" height="300">
