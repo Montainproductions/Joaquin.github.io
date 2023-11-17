@@ -41,8 +41,12 @@
                                 <div class="mainButtonText">This project involved designing and working on a Finite State Machine (FSM) in Unity. This allowed me to learn the entire design and creation process for working with an AI system for a game. This version of the FSM contains five (5) main states: Patrol, Idle, Aggression, Attack, and Cover, which the AI will transition to depending on whether it sees the player, proximity to said player vs the distance to cover points, and a few other internal reasons. Working on the FSM allowed me to gain a whole new level of understanding about correctly designing and working with an AI system for a game. Still, it has motivated me to continue working on this project, finding ways to improve it and working on other AI systems.</div>
 
 
-                                <div><img src="Files/AI FSM/Screenshot 2023-11-12 012501.png" width="500" height="300"></div>
-                                <br><br>
+                                <p>
+                                    <video width="640" height="360" controls>
+                                        <source src="Files/AI FSM/StatesShowcase.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </p>
 
                                 <div class="mainButtonText">The project began by creating a research and design document that helped structure what I had learned throughout the project and plan the AI system. In the PDF document below, I have a collection of the primary research I have been able to do, which includes navigation meshes, FSM, Behavior Trees, and Utility AI, as well as the design of all the states that the NPC would have and related trait systems for the NPCs.</div>
 
@@ -56,12 +60,8 @@
 
                                 <div class="mainButtonText">The NPCs start in the Patrol state with assigned patrol and cover positions. Then, whenever the player enters visual range or fires a weapon nearby, NPCs will transition to an Aggression state. At this point, the NPC calculates a utility value to determine its willingness to attack or seek cover based on player distance and nearby cover points. A higher utility value represents a higher willingness to attack the player and transition to the attack state. The value is stored in the AI State Manager script, and the NPC is added to a list in the Director AI with other NPCs in the Aggression state.</div>
 
-                                <p>
-                                    <video width="640" height="360" controls>
-                                        <source src="Files/AI FSM/StatesShowcase.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </p>
+                                <div><img src="Files/AI FSM/Screenshot 2023-11-12 012501.png" width="500" height="300"></div>
+                                <br><br>
 
                                 <div class="mainButtonTextAfterImage">The Director AI periodically processes the list above of NPCs in the Aggression state (Currently every 2 seconds). Next, it checks if the current limit of NPCs in the Attack state has been reached; otherwise, it will probabilistically select the Attack or Cover state with a higher utility value with a lower threshold for the Attack state. In the Attack state, the NPC approaches the player if necessary and fires its weapon, while those in the Cover state choose the closest cover point behind a piece of the cover relative to the player. Finally, if the line of sight is lost, the NPCs switch to the Searching state and go to the player's last known position. At which point, if not in range will return to the Patrol state.</div>
 
