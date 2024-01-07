@@ -82,7 +82,14 @@ a {
 
 .buttonTitleFSM {
     position: relative;
-    left: -108px;
+    left: -148px;
+    top: -70px;
+    font-size: 24px;
+}
+
+.buttonTitleHFSM {
+    position: relative;
+    left: -74px;
     top: -70px;
     font-size: 24px;
 }

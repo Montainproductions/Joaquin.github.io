@@ -31,7 +31,32 @@
                         </div>
 
                         <p></p>
-                        
+
+                        <a id="HFSMAI" name="HFSMAI">
+                            <div class="minimizedButtonPromt">
+                                <img src="Files/AI FSM/idleNPC.png" width="70" height="90" class="buttonImage">
+                                <div class="buttonTitleHFSM">AI  Hieracacly Finite State Machine</div>
+                                <div class="mainButtonReleaseDate">Release Date: December 2023</div>
+                                <div class="linedividerSlightlySmallerV3"></div>
+
+                                <br>
+
+                                <div class="mainButtonText">After working on the initial Finite State Machine, I decided it would be an excellent choice to remake certain parts of the code to improve how the states worked with each other. Before starting the rework, I wanted to make a rough list of the main things that needed updating. The highest priority items that needed updating were the state transitions and moving creation methods to a higher group state in charge of various states. The grouping I landed on was Non-Combat, Alert, and Combat parent states. The first parent state (Non-Combat) was meant to be in charge of the patrolling and idle state and checked when it would transition to the alert states. I also implemented an alert parent state, controlling the alert and searching states. The final parent state was the combat state, which contained all the previously mentioned states of cover, attack, and aggression. As part of this rework, I also had to create an image to conceptualize better how different states interacted with each other through their transitions. I have the image below as a way for the readers to understand better the current states and how they transition.</div>
+
+                                <div><img src="Files/AI FSM/State machines.png" width="500" height="300"></div>
+                                <br><br>
+
+                                <div class="mainButtonText">My main challenge when recreating the transition was ensuring all states/methods were updated with the proper changes. This is because, at different times, when testing more minor transitions between certain states, the AI system would have a problem where it would fully transition, or the animation system would break as it might have stopped receiving the correct information it initially expected. The solution I used to solve this was to fully update all of the code and use the UI Debug system to explain better the transitions that occurred. This gave me a better understanding of where each AI was in the state process.</div>
+
+                                <div><img src="Files/AI FSM/Screenshot 2024-01-07 164759.png" width="500" height="300"></div>
+
+                                <p><a href="https://docs.google.com/document/d/1hRznb8RsCPGlu8isXaYCOTSUT3npHfAZLWOou7tlnAs/edit?usp=sharing"><button class="button1">Design Document</button></a></p>
+                                <a href="https://github.com/Montainproductions/FPCharacter-Unity/tree/AI-Unity-Project"><button class="button1">Github Repo</button></a>
+                            </div>
+                        </a>
+
+                        <p></p>
+
                         <a id="FSMAI" name="FSMAI">
                             <div class="minimizedButtonPromt">
                                 <img src="Files/AI FSM/idleNPC.png" width="70" height="90" class="buttonImage">
