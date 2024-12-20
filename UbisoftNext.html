@@ -1,0 +1,79 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+    <head>
+        <title>Joaquin De Losada - Ubisoft NEXT Competition</title>
+    </head>
+    <body>
+        <div class="topNav">
+            <a href="index.html"><div class="nameTopRight">Joaquin De Losada</div></a>
+        </div>
+
+        <div class="lightGreenBox">
+            <br>
+            <div class="titleIntroText">Ubisoft Next Competition:</div>
+            <div class="titleIntroText">Release Date: March 2023</div>
+            <div class="titleIntroText">C++/Graphics API</div>
+
+            <br>
+
+            <div class="firstIntroTextFSM"><strong>Project summerisation:</strong> The project combines C++ and a graphics API to create a game where players control a drill to destroy walls for points within a time limit. Levels become progressively harder as they have less time per level.</div>
+
+            <br>
+
+            <div class=" firstIntroTextFSM"><strong>Dynamic Map Generation:</strong> Dynamic level creation system using a 2D array and seeded randomness to generate unique layouts each level, ensuring replayability.</div>
+
+            <br>
+
+            <div class=" firstIntroTextFSM"><strong>Porject demonstrations:</strong> The implementation demonstrates effective use of programming logic, blending randomness with structured design, and offers potential for further refinements to enhance level diversity.</div>
+            <br>
+        </div>
+
+        <br>
+        <div class="subTitle">Intro:</div>
+        <br>
+        <div class="smallerTitle">When I initially planned to participate in the game jam I had limited experience using C++ and had spent the majority of my time using C# and Java. This meant that before I started I decided to do some basic research on how different the language was to what I was used to. After some consideration of how the memory system worked, I decided that I would attempt to use it in a limited manner. This way I could get some more practice with it while keeping it to a limited fashion so as to not overwhelm myself or risk too many memory leaks.</div>
+
+        <br>
+
+        <img class="mainImges" src="Files/UbisoftNext.png" />
+
+        <hr>
+        <div class="subTitle">Project explanation:</div>
+        <br>
+        <div class="smallerTitle">The theme of the Game Jam was to make a Bomberman-style game. During the project even though I had limited experience with using the API and C++ I was able to piece together the basic language syntax and design with the help of my previous experience using C# and Java.</div>
+
+        <br>
+
+        <div class="smallerTitle">
+            Something I am proud about in the project is the level creation method as it is set up in a way that would allow it to create a new level each time the player goes to the next level or starts a new game. It is set up with a 2d array data type position which contains a x and y pixel position as well as a string with the object that is contained in the position. I proceed to go through the 2d array and place all of the walls that the player cant pass through both around the border and in the middle of the map itself. I proceed to determine if the current position contains the string "Empty" to then return a number using a random method C++ has as part of their library and the current time as a seed to help with the randomness. If the number turns out to be less than 1/4 the max number that the seeded random can return (In this case is 32767) it will then set the Position as a breakable wall that the player can break to gain points and continue on with the level. Because of the chances that two people will start a new game or level at the same time it allows for the level creator the ability to seemingly create a new level each time.
+        </div>
+
+        <br>
+
+        <div>
+            <video class="mainVideo" controls>
+                <source src="Files/DrillPerson Ubisoft Next Gameplay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <hr>
+
+        <div class="subTitle"> Possible Improvements: </div>
+
+        <br>
+        <p class="smallerTitle">
+            One way I could improve on the random number generator is by taking in account the current level, how many destructible walls have already been created in the level and the current position that the level created is looking at. This would allow for even more random levels as the chances that the combination of all these different variables can be achieved together would be difficult to achieve and allow for each new level someone plays to be unique to their playthrough.
+        </p>
+
+        <br><br>
+
+        <div class="titleIntroText"><a href="https://github.com/Montainproductions/Ubisoft-Next-Programming-March-2023"><button class="button1">GitHub Repo</button></a></div>
+
+        <br>
+        <footer>
+            <p>- Joaquin De Losada, 2024, All rights reserved</p>
+        </footer>
+    </body>
+</html>

@@ -1,7 +1,12 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+ }
+
 body {
-    background-color: #000000;
-    color: #519c10;
+    background-color: #CED0CE;
     font-family: monospace;
+    height: 100%;
 }
 
 h1 {
@@ -9,270 +14,513 @@ h1 {
     margin-top: 50px;
 }
 
-a {
-    color: #519c10;
-    text-decoration: none;
+/* Top Menu Area*/
+.topNav {
+    flex-shrink: 0;
+    background: #327348;
 }
 
-.container {
-    width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.terminalBase {
-    background-color: #1f1f1f;
-    padding: 8px;
-    border-radius: 15px;
-}
-
-.terminalSecondLayer {
-    background-color: #2C2C2B;
-    padding: 6px;
-    border-radius: 15px;
-}
-
-.terminalthirdLayer {
-    background-color: #343634;
-    padding: 6px;
-    border-radius: 15px;
-}
-
-.minimizedButtonPromt {
-    background-color: #535551;
-    padding: 6px;
-    border-radius: 30px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.minimizedButtonPromt:hover, .minimizedButtonPromt:focus {
-    background-color: #066832;
-    /*
-    padding: 8px;
-    margin: 10px 6px;
-    */
-}
-
-.buttonImage {
-    position: relative;
-    border-radius: 50%;
-    left: -340px;
-}
-
-.buttonTitleAboutMe {
-    position: relative;
-    left: -250px;
-    top: -70px;
-    font-size: 24px;
-}
-
-.buttonTitleAIProjects {
-    position: relative;
-    left: -176px;
-    top: -70px;
-    font-size: 24px;
-}
-
-.buttonTitleAIProjectsV2 {
-    position: relative;
-    left: -227.5px;
-    top: -70px;
-    font-size: 24px;
-}
-
-.buttonTitleFSM {
-    position: relative;
-    left: -148px;
-    top: -70px;
-    font-size: 24px;
-}
-
-.buttonTitleHFSM {
-    position: relative;
-    left: -74px;
-    top: -70px;
-    font-size: 24px;
-}
-
-.buttonTitleGameProject {
-    position: relative;
-    left: -215px;
-    top: -70px;
-    font-size: 24px;
-}
-
-.buttonTitleUbisoftNext {
-    position: relative;
-    left: -141px;
-    top: -70px;
-    font-size: 24px;
-}
-
-.buttonTitleDontFail {
-    position: relative;
-    left: -165px;
-    top: -70px;
-    font-size: 24px;
-}
-
-.buttonTitleVR {
-    position: relative;
-    left: 27.5px;
-    top: -60px;
-    font-size: 24px;
-}
-
-.linedividerMain {
-    border-bottom: 2px solid #519c10;
-    position: relative;
-    width: 670px;
-    left: 68px;
-    top: -70px;
-}
-
-.linedividerSlightlySmaller {
-    border-bottom: 2px solid #519c10;
-    position: relative;
-    width: 667.5px;
-    left: 70px;
-    top: -70px;
-}
-
-.linedividerSlightlySmallerV2 {
-    border-bottom: 2px solid #519c10;
-    position: relative;
-    width: 667.5px;
-    left: 70px;
-    top: -82.5px;
-}
-
-.linedividerSlightlySmallerV3 {
-    border-bottom: 2px solid #519c10;
-    position: relative;
-    width: 667.5px;
-    left: 70px;
-    top: -92.5px;
-}
-
-.mainButtonText {
-    position: relative;
-    top: -20px;
-    font-size: 18px;
-}
-
-.mainButtonTextAfterImage {
-    position: relative;
-    top: -5px;
-    font-size: 18px;
-}
-
-.mainButtonReleaseDate {
-    position: relative;
-    top: -70px;
-    font-size: 18px;
-}
-
-.mainButtonReleaseDateV2 {
-    position: relative;
-    top: -60px;
-    font-size: 18px;
-}
-
-//
-.typed-text {
-    font-size: 24px;
-    padding-bottom: 10px;
-    border-bottom: 3px solid #519c10;
-    margin-bottom: 10px;
-}
-
-.smallertyped-text {
-    font-size: 23px;
-    padding-bottom: 2px;
-    margin-bottom: 3px;
-}
-
-.highlight-box {
+.nameTopRight {
+    color: #CED0CE;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
     width: 300px;
-    height: 200px;
-    background-color: transparent;
-    transition: background-color 0.5s ease;
+    font-size: 30px;
+    font-style: normal;
+    position: relative;
+    top: 30px;
+    left: 40px;
 }
 
-.highlight-box:hover {
-    background-color: rgba(0, 255, 0, 0.5);
+/* Intro text area*/
+.lightGreenBox {
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid #1E5E8C;
+    background: #71AE85;
+    box-shadow: 0px 4px 12px 8px rgba(0, 0, 0, 0.25) inset;
 }
 
-button {
-    /*
-        #555153
-        #535551
-        #4C5B4D
-    */
-    background-color: #4C5B4D;
-    border: none;
-    color: #519c10;
-    padding: 6px;
+.titleIntroText {
+    width: 550px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #CED0CE;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease-in-out;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.firstIntroText {
+    width: 929px;
+    height: 200px;
+    flex-shrink: 0;
+    color: #CED0CE;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.firstIntroTextFSM {
+    color: #CED0CE;
+    text-align: center;
+    font-family: Inter;
+}
+
+.projectBox {
+    border-radius: 10px;
+    border: 7px solid #1E5E8C;
+    background: #327348;
+    box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+}
+
+.projectText {
+    color: #CED0CE;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    width: 300px;
+    font-size: 24px;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Explanation Text*/
+.subTitle {
+    flex-shrink: 0;
+    color: #2451e3;
+    font-family: Inter;
+    text-decoration: underline;
+    font-weight: bold;
+    position: relative;
+    left: 35px;
+}
+
+.subTitleBottem {
+    flex-shrink: 0;
+    color: #2451e3;
+    font-family: Inter;
+    position: relative;
+    left: 35px;
+}
+
+.smallerTitle {
+    color: #2451e3;
+    position: relative;
+    left: 35px;
+    width: 95%
+}
+
+hr {
+    border: none; /* Removes default border */
+    height: 2px; /* Line thickness */
+    background-color: #327348; /* Line color */
+    width: 95%; /* Line width (relative to its container) */
+    margin: 20px auto; /* Adds spacing and centers it */
 }
 
 .button1 {
-    border-radius: 12px;
-    font-size: 19px;
-    margin: 8px 4px;
+    text-align: center;
 }
 
-.button2 {
-    border-radius: 14px;
-    font-size: 24px;
-    margin: 10px 6px;
+.newCenter {
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.button3 {
-    border-radius: 20px;
-    font-size: 32px;
-    margin: 10px 4px;
-}
-
-button:hover, button:focus {
-    background-color: #3c7911; /* Change color on hover */
-    /*
-    padding: 8px;
-    margin: 10px 6px;
-    */
-}
-
-.dropdown {
-    position: fixed; /* Fixed position */
-    top: 20px; /* Distance from top */
-    right: 20px; /* Distance from right */
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: fixed;
-    right: 9px;
-    background-color: #535551;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 14px;
-    text-decoration: none;
+.mainImges {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
+.mainVideo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.show {
-    display: block;
+embed {
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/* 4k Screens */
+@media only screen and (min-width: 1441px) {
+    .topNav {
+        width: 100%;
+        height: 100px;
+    }
+
+    .nameTopRight {
+        font-weight: 700;
+    }
+
+    .mainImges {
+        width: 600px;
+        height: 400px;
+    }
+
+    .mainVideo {
+        width: 700px;
+        height: 440px;
+    }
+
+    .projectBox {
+        width: 415px;
+        height: 500px;
+    }
+
+    .projectBoxPosition1 {
+        position: relative;
+        top: 45px;
+        left: 270px;
+    }
+    
+    .projectBoxPosition2 {
+        position: relative;
+        top: -455px;
+        left: 770px;
+    }
+
+    .projectBoxPosition3 {
+        position: relative;
+        top: -400px;
+        left: 270px;
+    }
+
+    .projectBoxPosition4 {
+        position: relative;
+        top: -900px;
+        left: 770px;
+    }
+
+    .projectBoxPosition5 {
+        position: relative;
+        top: -835px;
+        left: 520px;
+    }
+
+    .projectImage1 {
+        position: relative;
+        top: 76px;
+        left: -6px;
+        width: 414px; 
+        height: 390px;
+    }
+
+    .projectImage2 {
+        position: relative;
+        top: 50px;
+        left: -6px;
+        width: 414px;
+        height: 390px;
+    }
+
+    .projectText1 {
+        top: 40px;
+    }
+    
+    .projectText2 {
+        top: 30px;
+    }
+}
+
+/* large monitor */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .topNav {
+        width: 100%;
+        height: 100px;
+    }
+
+    .nameTopRight {
+        font-weight: 700;
+    }
+
+    .lightGreenBox {
+        width: 100%;
+    }
+
+    .mainImges {
+        width: 500px;
+        height: 350px;
+    }
+
+    .mainVideo {
+        width: 600px;
+        height: 320px;
+    }
+
+    .projectBox {
+        width: 415px;
+        height: 500px;
+    }
+
+    .projectBoxPosition1 {
+        position: relative;
+        top: 45px;
+        left: 110px;
+    }
+
+    .projectBoxPosition2 {
+        position: relative;
+        top: -455px;
+        left: 590px;
+    }
+
+    .projectBoxPosition3 {
+        position: relative;
+        top: -400px;
+        left: 110px;
+    }
+
+    .projectBoxPosition4 {
+        position: relative;
+        top: -900px;
+        left: 590px;
+    }
+
+    .projectBoxPosition5 {
+        position: relative;
+        top: -835px;
+        left: 350px;
+    }
+
+    .projectImage1 {
+        position: relative;
+        top: 76px;
+        left: -6px;
+        width: 414px;
+        height: 390px;
+    }
+
+    .projectImage2 {
+        position: relative;
+        top: 50px;
+        left: -6px;
+        width: 414px;
+        height: 390px;
+    }
+
+    .projectText1 {
+        top: 40px;
+    }
+
+    .projectText2 {
+        top: 30px;
+    }
+}
+
+/* regular laptop */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .topNav {
+        width: 100%;
+        height: 100px;
+    }
+
+    .lightGreenBox {
+        width: 100%;
+    }
+
+    .nameTopRight{
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        position: relative;
+        top: 30px;
+        left: 40px;
+    }
+
+    .titleIntroText {
+        font-size: 30px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .firstIntroText {
+        font-size: 25px;
+        position: relative;
+        top: 80px;
+        left: 50px;
+    }
+
+    /* Main Page Project */
+    .projectBox {
+        width: 325px;
+        height: 400px;
+    }
+
+    .projectBoxPosition1{
+        position: relative;
+        top: 60px;
+        left: 100px;
+    }
+
+    .projectBoxPosition2{
+        position: relative;
+        top: -340px;
+        left: 500px;
+    }
+
+    .projectBoxPosition3 {
+        position: relative;
+        top: -240px;
+        left: 100px;
+    }
+
+    .projectBoxPosition4 {
+        position: relative;
+        top: -640px;
+        left: 500px;
+    }
+
+    .projectBoxPosition5{
+        position: relative;
+        top: -510px;
+        left: 300px;
+    }
+
+    .projectImage1 {
+        position: relative;
+        top: 76px;
+        left: -7px;
+        width: 325px;
+        height: 290px;
+    }
+
+    .projectImage2 {
+        position: relative;
+        top: 50px;
+        left: -7px;
+        width: 325px;
+        height: 290px;
+    }
+
+    .projectText1 {
+        top: 40px;
+    }
+
+    .projectText2 {
+        top: 30px;
+    }
+
+    .mainVideo {
+        width: 550px;
+        height: 350px;
+    }
+}
+
+/* small laptop */
+@media only screen and (min-width: 426px) and (max-width: 769px) {
+    .topNav {
+        width: 100%;
+        height: 75px;
+    }
+
+    .lightGreenBox {
+        width: 100%;
+    }
+
+    .nameTopRight {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        position: relative;
+        top: 20px;
+        left: 30px;
+    }
+
+    .mainVideo {
+        width: 450px;
+        height: 250px;
+    }
+
+    /* Main Page Project */
+    .projectBox {
+        width: 276px;
+        height: 350px;
+    }
+
+    .projectBoxPosition1 {
+        position: relative;
+        top: 40px;
+        left: 40px;
+    }
+
+    .projectBoxPosition2 {
+        position: relative;
+        top: -310px;
+        left: 390px;
+    }
+
+    .projectBoxPosition3 {
+        position: relative;
+        top: -240px;
+        left: 40px;
+    }
+
+    .projectBoxPosition4 {
+        position: relative;
+        top: -590px;
+        left: 390px;
+    }
+
+    .projectBoxPosition5 {
+        position: relative;
+        top: -510px;
+        left: 230px;
+    }
+
+    .projectImage1 {
+        position: relative;
+        top: 76px;
+        left: -7px;
+        width: 277px;
+        height: 290px;
+    }
+
+    .projectImage2 {
+        position: relative;
+        top: 50px;
+        left: -7px;
+        width: 277px;
+        height: 290px;
+    }
+
+    .projectText1 {
+        top: 40px;
+        left: -20px;
+    }
+
+    .projectText2 {
+        top: 30px;
+        left: -20px;
+    }
+
+    .mainVideo {
+        width: 550px;
+        height: 350px;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 376px) and (max-width: 426px) {}
+
+/* landscape phone */
+@media only screen and (min-width: 321px) and (max-width: 376px) {}

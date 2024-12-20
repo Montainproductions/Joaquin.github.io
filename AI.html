@@ -2,104 +2,89 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html>
     <head>
-        <title>Joaquin De Losada</title>
+        <title>Joaquin De Losada - HFSM AI</title>
     </head>
     <body>
-        <h1><a href="index.html"><button class="button3">Joaquin De Losada</button></a></h1>
-        <div class="container">
-            <div class="dropdown">
-                <button onclick="myFunction()" class="button1">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="AboutMe.html">More about me</a>
-                    <a href="GameProjects.html">Game Projects</a>
-                    <a href="AI.html">AI projects</a>
-                    <a href="ContactMe.html">Contact Me</a>
-                </div>
-            </div>
+        <div class="topNav">
+            <a href="index.html"><div class="nameTopRight">Joaquin De Losada</div></a>
         </div>
-        <div class="container">
-            <div class="terminalthirdLayer">
-                <div class="terminalSecondLayer">
-                    <div class="terminalBase">
-                        <div class="minimizedButtonPromt">
-                            <img src="Files/AI FSM/idleNPC.png" width="70" height="90" class="buttonImage">
-                            <div class="buttonTitleAIProjectsV2">AI Projects</div>
-                            <div class="linedividerSlightlySmaller"></div>
-                            <div class="mainButtonText">The following section is a collection of the AI-related project I've worked on over the past few years. The AI I have the greatest passion for working on is NPC systems and gameplay-related AI systems. I started working on AI systems to understand how AI systems work in strategy games like Age of Empires 2 and a youtube channel called "AI and Games." Even though I am early in my career, I have some project ideas revolving around a behavior tree in Unity and procedurally generated puzzle games.</div>
-                        </div>
+        <div class="lightGreenBox">
+            <br>
 
-                        <p></p>
+            <div class="titleIntroText"> AI State Machine </div>
+            <div class="titleIntroText"> Hierarchical Finite State Machine (HFSM) </div>
+            <div class="titleIntroText"> 2023 </div>
+            <div class="titleIntroText"> C#/Unity </div>
+            <div class="firstIntroTextFSM"><strong>New Alert and Searching States:</strong> An alert state was introduced to create a brief delay before the AI identifies the player as a threat. This offers the player a tactical advantage and more immersive gameplay. The searching state improves AI responsiveness by adding layers to its behavior.</div>
 
-                        <a id="HFSMAI" name="HFSMAI">
-                            <div class="minimizedButtonPromt">
-                                <img src="Files/AI FSM/Screenshot 2023-11-12 012933.png" width="70" height="90" class="buttonImage">
-                                <div class="buttonTitleHFSM">AI  Hieracacly Finite State Machine</div>
-                                <div class="mainButtonReleaseDate">Release Date: December 2023</div>
-                                <div class="linedividerSlightlySmallerV3"></div>
+            <br>
 
-                                <br>
+            <div class=" firstIntroTextFSM"><strong>FSM to HFSM Refactoring Challenges:</strong> The migration required restructuring due to multiple references to the FSM manager. A utility-based trait system was updated to accommodate both FSM and HFSM implementations, ensuring appropriate script checks and behavior adjustments.</div>
 
-                                <div class="mainButtonText">After working on the initial Finite State Machine, I decided it would be an excellent choice to remake certain parts of the code to improve how the states worked with each other. Before starting the rework, I wanted to make a rough list of the main things that needed updating. The highest priority items that needed updating were the state transitions and moving creation methods to a higher group state in charge of various states. The grouping I landed on was Non-Combat, Alert, and Combat parent states. The first parent state (Non-Combat) was meant to be in charge of the patrolling and idle state and checked when it would transition to the alert states. I also implemented an alert parent state, controlling the alert and searching states. The final parent state was the combat state, which contained all the previously mentioned states of cover, attack, and aggression. As part of this rework, I also had to create an image to conceptualize better how different states interacted with each other through their transitions. I have the image below as a way for the readers to understand better the current states and how they transition.</div>
+            <br>
 
-                                <div><img src="Files/AI FSM/State machines.png" width="500" height="300"></div>
-                                <br><br>
-
-                                <div class="mainButtonText">My main challenge when recreating the transition was ensuring all states/methods were updated with the proper changes. This is because, at different times, when testing more minor transitions between certain states, the AI system would have a problem where it would fully transition, or the animation system would break as it might have stopped receiving the correct information it initially expected. The solution I used to solve this was to fully update all of the code and use the UI Debug system to explain better the transitions that occurred. This gave me a better understanding of where each AI was in the state process.</div>
-
-                                <div><img src="Files/AI FSM/Screenshot 2024-01-07 164759.png" width="500" height="300"></div>
-
-                                <p><a href="https://docs.google.com/document/d/1hRznb8RsCPGlu8isXaYCOTSUT3npHfAZLWOou7tlnAs/edit?usp=sharing"><button class="button1">Design Document</button></a></p>
-                                <a href="https://github.com/Montainproductions/FPCharacter-Unity/tree/AI-Unity-Project"><button class="button1">Github Repo</button></a>
-                            </div>
-                        </a>
-
-                        <p></p>
-
-                        <a id="FSMAI" name="FSMAI">
-                            <div class="minimizedButtonPromt">
-                                <img src="Files/AI FSM/Screenshot 2023-11-12 012501.png" width="70" height="90" class="buttonImage">
-                                <div class="buttonTitleFSM">AI Finite State Machine</div>
-                                <div class="mainButtonReleaseDate">Release Date: April 2023</div>
-                                <div class="linedividerSlightlySmallerV3"></div>
-                                <div class="mainButtonText">This project involved designing and working on a Finite State Machine (FSM) in Unity. This allowed me to learn the entire design and creation process for working with an AI system for a game. This version of the FSM contains five (5) main states: Patrol, Idle, Aggression, Attack, and Cover, which the AI will transition to depending on whether it sees the player, proximity to said player vs the distance to cover points, and a few other internal reasons. Working on the FSM allowed me to gain a whole new level of understanding about correctly designing and working with an AI system for a game. Still, it has motivated me to continue working on this project, finding ways to improve it and working on other AI systems.</div>
-
-
-                                <p>
-                                    <video width="640" height="360" controls>
-                                        <source src="Files/AI FSM/StatesShowcase.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </p>
-
-                                <div class="mainButtonText">The project began by creating a research and design document that helped structure what I had learned throughout the project and plan the AI system. In the PDF document below, I have a collection of the primary research I have been able to do, which includes navigation meshes, FSM, Behavior Trees, and Utility AI, as well as the design of all the states that the NPC would have and related trait systems for the NPCs.</div>
-
-                                <embed src="Files/AI FSM/AI DD.pdf#toolbar=0" type="application/pdf" width="90%" height="600px" />
-
-                                <br><br>
-
-                                <div class="mainButtonTextAfterImage">Each NPC also has a standard methods script for movement and an AI State Manager for current state control and essential information. Separately, a GameObject named the Director AI manages the NPCs as a group, limiting the number of NPCs in the Attack state to maintain gameplay balance and other important decisions related to all NPCs.</div>
-
-                                <br><br>
-
-                                <div class="mainButtonText">The NPCs start in the Patrol state with assigned patrol and cover positions. Then, whenever the player enters visual range or fires a weapon nearby, NPCs will transition to an Aggression state. At this point, the NPC calculates a utility value to determine its willingness to attack or seek cover based on player distance and nearby cover points. A higher utility value represents a higher willingness to attack the player and transition to the attack state. The value is stored in the AI State Manager script, and the NPC is added to a list in the Director AI with other NPCs in the Aggression state.</div>
-
-                                <div><img src="Files/AI FSM/Screenshot 2023-11-12 012501.png" width="500" height="300"></div>
-                                <br><br>
-
-                                <div class="mainButtonTextAfterImage">The Director AI periodically processes the list above of NPCs in the Aggression state (Currently every 2 seconds). Next, it checks if the current limit of NPCs in the Attack state has been reached; otherwise, it will probabilistically select the Attack or Cover state with a higher utility value with a lower threshold for the Attack state. In the Attack state, the NPC approaches the player if necessary and fires its weapon, while those in the Cover state choose the closest cover point behind a piece of the cover relative to the player. Finally, if the line of sight is lost, the NPCs switch to the Searching state and go to the player's last known position. At which point, if not in range will return to the Patrol state.</div>
-
-                                <div><img src="Files/AI FSM/Screenshot 2023-11-12 012933.png" width="500" height="300"></div>
-
-                                <p><a href="https://docs.google.com/document/d/1hRznb8RsCPGlu8isXaYCOTSUT3npHfAZLWOou7tlnAs/edit?usp=sharing"><button class="button1">Design Document</button></a></p>
-                                <a href="https://github.com/Montainproductions/FPCharacter-Unity/tree/AI-Unity-Project"><button class="button1">Github Repo</button></a>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <div class=" firstIntroTextFSM"><strong>Enhanced Parent State Responsibilities:</strong> Vision checks and awareness logic were centralized to parent states (non-combat and combat), making them responsible for timings and player detection ranges. This mimics human-like behavior by expanding awareness as danger becomes apparent.</div>
+            <br>
         </div>
-    <script src="js/script.js"></script>
+
+        <br>
+
+        <div class="subTitle"> Intro: </div>
+
+        <br>
+
+        <div class="smallerTitle">This post extends my previous project, “AI Finite State Machine.” After a few days of completing the project and conversing with a few friends about it, I realized that there were parts of the AI that I could improve by making it a hierarchical finite state machine (HFSM). So, after some planning, I sketched out a new state machine that would implement the states I had already created as well as two new alert states and make the entire project in a Hierarchical Finite State Machine</div>
+
+        <br>
+
+        <img class="mainImges" src="Files/AI_FSM/State machines.png">
+
+        <hr>
+
+        <div class="subTitle"> Changes: </div>
+
+        <br>
+
+        <div class="smallerTitle">The main changes made to the AI was to move most of the vision checking/information to the parent states so that each parent state was in charge of its timings and distances for looking for the player. As the player transitions from the parent non-combat state to the parent combat state, the AI will become more aware of the player and use its “senses” to look for the player. Most people might do this when searching and attacking a person, as in the beginning, they would be observant of their areas and look in a shorter area. But as they realize an enemy is nearby, they will look at a further distance, allowing them to keep track for longer.</div>
+
+        <br>
+
+        <div class="smallerTitle">Another major state I added was an alert state as well as a searching state. The main work for this group was adding an extra layer of searching for the AI. This would allow a few seconds before the AI initially notices the player as a threat. This is meant to give the player a slight advantage to get into a better position or start attacking the AI first to make the player feel faster.</div>
+
+        <br>
+
+        <div class="smallerTitle">If at any point during this alert state or being in the patrol state, the player is to shoot or another AI in an audio range is heard, they will transition to the aggression state (Combat parent state). This will lead the AI to return a utility value sent to the director AI to determine which ones are meant to attack or run to cover.</div>
+
+        <br>
+
+        <img src="Files/AI_FSM/Screenshot 2023-11-12 012933.png" class="mainImges">
+
+        <hr>
+
+        <div class="subTitle"> Challenges: </div>
+
+        <br>
+
+        <div class="smallerTitle">One of the main challenges when refactoring the project code from an FSM to an HFSM was the fact that there were multiple instances of calling the main FSM manager script. This is because, in the original FSM, I included a basic trait system that would increase or decrease the utility value when determining how willing the AI might be to attack the player. The solution I came up with was to check whether or not the AI it was fitting was an FSM or HFSM and then check the appropriate scripts.</div>
+
+        <br>
+
+        <br />
+        <p>
+            <video class="mainVideo" controls>
+                <source src="Files/AI_FSM/StatesShowcase.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </p>
+
+        <br><br>
+
+        <div class="titleIntroText"><a href="https://docs.google.com/document/d/1hRznb8RsCPGlu8isXaYCOTSUT3npHfAZLWOou7tlnAs/edit?usp=sharing"><button class="button1">Design Document</button></a></div>
+        <div class="titleIntroText"><a href="https://github.com/Montainproductions/FPCharacter-Unity/tree/AI-Unity-Project"><button class="button1">Github Repo</button></a>
+            <br></div>
+
+        <footer>
+            <p>- Joaquin De Losada, 2024, All rights reserved</p>
+        </footer>
     </body>
 </html>

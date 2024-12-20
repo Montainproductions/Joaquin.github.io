@@ -1,0 +1,107 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+    <head>
+        <title>Joaquin De Losada - FSM AI</title>
+    </head>
+    <body>
+        <div class="topNav">
+            <a href="index.html"><div class="nameTopRight">Joaquin De Losada</div></a>
+        </div>
+
+        <div class="lightGreenBox">
+            <br>
+
+            <div class="titleIntroText"> AI State Machine </div>
+            <div class="titleIntroText"> Finite State Machines (FSM) </div>
+            <div class="titleIntroText"> 2023 </div>
+            <div class="titleIntroText"> C#/Unity </div>
+            <div class="firstIntroTextFSM"><strong>Director AI system:</strong> A director AI organizes aggressive NPCs by utility scores, assigning actions like attacking or seeking cover. Cover points are validated for safety and availability.</div>
+
+            <br>
+
+            <div class=" firstIntroTextFSM"><strong>Improving percived realism of NPC:</strong> Problem-solving included adding animations and reaction time variability to enhance gameplay. Including an artificial delay between state transitions simulates decision-making, improving accessibility and perceived realism while enabling dynamic difficulty adjustment.</div>
+
+            <br>
+
+            <div class=" firstIntroTextFSM"><strong>Enhanced Parent State Responsibilities:</strong> The FSM begins with a patrol state where the AI moves between designated points, with a chance to idle. If the player is detected or a weapon is fired nearby, the AI transitions to an aggression state.</div>
+
+            <br>
+        </div>
+
+        <br>
+
+        <div class="subTitle"> Intro: </div>
+        <br>
+        <div class="smallerTitle">When initially researching for the project I know that I wanted to make a Finite State Machine (FSM) as my first AI project. This would allow me to not only learn how to properly implement an AI system but could be later expanded with more states. As part of the project I decided to make an enemy system for a first person shooter similar to other games like the first and second Half Life. By creating a FSM in the style of a first person shooter I could have a better time deconstructing a typical AI system and then attempting to reconstruct it in Unity.</div>
+        <br>
+        <div class="smallerTitle">I initially planned on making five states that would allow for the AI to properly operate in a first person environment. The states consisted of the following: Patrol, Idle, Aggression, Attacking, and the Cover.</div>
+
+        <hr>
+
+        <div class="subTitle"> Documentation: </div>
+        <br>
+        <div class="smallerTitle">As I started work on the AI system I decided to create a basic document that would allow me to have in writing what I planned on implementing for the project. The document can be read next to this section. This allowed me to have a better-defined project and have a less likely chance of being over scoped for the deadline. Limiting what I would work on for the project was extremely useful as I finished the majority of the project besides a few bugs half a month earlier than initially intended. This allowed me to implement a test map that would challenge the players as they would encounter the AI in a normal map situation.</div>
+
+        <br>
+
+        <div class="newCenter">
+            <embed src="Files/AI_FSM/AI_DD.pdf" type="application/pdf" width="820px" height="600" />
+        </div>
+
+        <hr>
+
+        <div class="subTitle"> Implementation: </div>
+        <br>
+        <div class="smallerTitle">The way that the Finite State Machine is currently implemented is that it starts with a main state manager script that controls the changing of states when necessary and passes important information when first loading into a new level. There is also an implementation of a common methods script that controlled several methods that commonly used throughout multiple states. This tended to be movement-related methods or audio related methods.</div>
+        <br>
+        <div class="smallerTitle">Finally, I implemented a Director AI script that controls all of the FSMs as a group in the case they are in combat and it is needed to determine which ones will run to cover or attack the player. The goal with this script was to make sure not to overwhelm the players with to many targets to attack and being able to better determine which enemy to attack giving t them a chance to succeed.</div>
+        <br>
+
+        <img src="Files/AI_FSM/Screenshot 2023-11-12 012501.png" class="mainImges" >
+
+        <hr>
+
+        <div class="subTitle"> Execution of FSM: </div>
+
+        <br>
+
+        <div class="smallerTitle">The normal cycle for the FSM is to start in the patrol state and randomly choose a set of patrol points from a list of points it has access to. During that, it will have a random chance to change to the Idle state and return to the Patrol state. If at any point the player enters the AI vision cone or shoots a weapon inside its listing range then it will enter the aggression state.</div>
+
+        <br>
+
+        <div class="smallerTitle">This would be when the AI calculates a utility score which determines how much it wants to attack the player or run to cover. The director AI will take control of all AIs that recently calculated this utility AI and quickly sort them from highest to lowest. With higher scores representing a higher propensity to want to attack the player.</div>
+
+        <br>
+
+        <div class="smallerTitle">Once all of the attacking AIs have been placed in an ordered list the Director AI will begin going down the list. For each AI that is above the average utility score, they will have a higher chance of being chosen to transition to the attack state. But if the probability lands on the chance to fail then the FSM will transition to the Cover state instead and run to the closest free cover point.</div>
+
+        <br>
+
+        <div class="smallerTitle">While in the Attack state, the AI will determine if it needs to approach the player to be in range or start shooting. Meanwhile, in the Cover state, the AI will determine the closest cover spot not being used that doesn't leave them exposed. This is done by casting a ray from the closest cover section towards the player's head. If it hits a cover point then it's considered behind cover and checks if it's already taken. At this point, it can run towards the cover point.</div>
+
+        <br>
+
+        <div class="smallerTitle">While the player is still in view then every 5-10 seconds the AI will return to the aggression state and recalculate their Utility value against the player to start the process again. If at any point the AI loses sight of the player for a few seconds then it will transition back to the patrol state and start the cycle again.</div>
+
+        <br>
+
+        <div class="smallerTitle">One problem I encountered was the fact that the NPC would seem to act instantly as if to already knowing everything about the situation. I decided to take some time to problem solve it and came up with an idea of purposfully slowying down the reaction time between states. I initially wanted to find a way to show off what the NPC is doing through animations. Even though this did help slowdown the percived speed of the NPC there would still be moments (Especially when transitioning from patroling state to attack states) that made the NPC seem to be acting with super human speed.</div>
+
+        <br>
+
+        <div class="smallerTitle">The solution I was able to come up with was to have an articial time 1-2.5 second wait between states. This came down to the fact that I wanted to make the AI seem like it was "thinking" and so that it would appear like it was reacting to situations around it. By doing so it also made the game more accesible as the player wouldnt need to react at high speeds before getting attacked. It also allows for the player to choose their own deficulty level which would not only change enemy health but reaction speeds by increasing or decreasing the artifical latency. Which can allow for more accesibily for players who might not have the best reaction times or for players looking for more of a challenge.</div>
+
+        <hr>
+
+        <div class="subTitle"> Credit: </div>
+
+        <br>
+        <div class="smallerTitle">I would like to credit all the models, animations, and the majority of audio used during this project to a few online sources. As I am not skilled in the whole 3d modeling pipeline as well as animation I wanted to find some basic models online and allow me to speed up the process of the project to concentrate on working on the AI system. This helped me better spend my time properly making the enemies. The majority of models come from the Brecky free asset package (Link here) while the soldier and its animations come from Miximo which puts animations to 3d Models that a few friends had pointed me towards. Meanwhile, the enemy voices were voiced by my friend Tany who was kind enough to record about 30 lines to help show the thought process of the enemy and the actions they were taking.</div>
+        <br>
+
+        <footer>
+            <p>- Joaquin De Losada, 2024, All rights reserved</p>
+        </footer>
+    </body>
+</html>
