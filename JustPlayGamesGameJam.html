@@ -1,0 +1,91 @@
+﻿<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+    <head>
+        <title>Joaquin De Losada - HFSM AI</title>
+    </head>
+    <body>
+        <div class="topNav">
+            <a href="index.html"><div class="nameTopRight">Joaquin De Losada</div></a>
+        </div>
+        <div class="lightGreenBox">
+            <br>
+
+            <div class="titleIntroText">Idle game</div>
+            <div class="titleIntroText"> 2023 </div>
+            <div class="titleIntroText"> C#/Unity - Audio </div>
+            <div class="firstIntroTextFSM"><strong>Game description:</strong> Developed a satirical idle game during a game jam, focusing on pollution and industrial capitalism, where players manage companies to generate profits while impacting global pollution levels.</div>
+
+            <br>
+
+            <div class=" firstIntroTextFSM"><strong>Mathematical models:</strong> Researched idle game mechanics and applied mathematical models for upgrading costs and profit increases, using tools like Desmos for fine-tuning values.</div>
+
+            <br>
+
+            <div class=" firstIntroTextFSM"><strong>Created system to display large numbers:</strong> Overcame challenges in displaying large numerical values by implementing a logarithmic system to format numbers with appropriate suffixes (e.g., Million, Billion).</div>
+            <br>
+        </div>
+
+        <br>
+
+        <div class="subTitle">Intro: </div>
+
+        <br>
+
+        <div class="smallerTitle">In July 2024, I worked on a game jam with a writer/designer where we made a bare-bone satirical idle game around pollution and being a titan of industry. The game consisted of having the player buying companies that could bring money which can be used to improve how much money the companies they own make money or save up to buy a better factory. As the player buys more companies and drastically increases their profits there is an increase in pollution that's detected in the world. Depending on the current pollution levels and what companies have already been bought it will cause certain news articles to be "released" which appear in the game news section.</div>
+
+        <br>
+
+        <img class="mainImges" src="Files/IdleGame/Screenshot 2024-12-21 223034.png">
+
+        <hr>
+
+        <div class="subTitle">Math for company profits: </div>
+
+        <br>
+
+        <div class="smallerTitle">One of the main pillarstones of the game was the amount of money each company would earn and how it increased for every upgrade. So the first step was determining how other games like 'Adventure Capitalist' worked out the upgrade costs and the amount of money each block would return. After some research, we went to the following <a href="https://blog.kongregate.com/the-math-of-idle-games-part-i/">Kongregate blog</a> on math for idle games. We then determined all the values that would dynamically change when purchased by the player. This was narrowed down to a button to increase production, a button to improve efficiency (And decrease pollution), and the monthly pollution/profit values.</div>
+
+        <br>
+        <div class="smallerTitle">At this point, we spent some time in Desmos testing different constants for the equations to make sure they would properly increase. Once this was done, we implemented them to prefabs to start testing appropriate initial costs and whether unlocking and upgrading a company would smoothly chain to the next company. This took various hours of testing and reduced the number of companies available to buy.</div>
+
+        <br>
+        <div class="smallerTitle">By this point in development, the game jam had finished but we enjoyed the game we had at the time the designer and I spent another week finishing to work out some other features we wanted to implement as well as rework the news system to work better. At that point the designer's work was complete and it was primarily up to me to finish implementing all the companies we wanted to have as well as include an energy source mechanic into the game. The energy source would work similarly to increasing the efficiency of a company but be a general value that affects every company instead of specific ones. The cleaner the energy source then the better it would improve the companys untill an upper limit.</div>
+        <br>
+
+        <img src="Files/IdleGame/Screenshot 2024-12-20 000220.png" class="mainImges">
+
+        <hr>
+
+        <div class="subTitle">Number representation on screen: </div>
+
+        <br>
+
+        <div class="smallerTitle">An unforeseen challenge with the project was trying to show large numbers, especially when they were past the value of 1 million. I solved this by finding the log(10) of the integer in question and getting the floor from the resulting float. With the floored number I know the length of the initial number which can be used to find both how many digits need to be presented and determine what string should be attached at the end (Million, Billion, Trillion, etc). I can calculate a reduced value which represents the digits that appear in the initial values of the integer.</div>
+
+        <br>
+
+        <div class="smallerTitle">As an example let's consider the player has 23,456,789 dollars to spend. When doing a log calculation and obtaining the floor (Integer value of the current float) I have a length of integer of 7. I can then find the remainder of the value when dividing by 3 (2.3333). This new remainder float (0.3333) means that only 2 values (2 and 3) appear in the millionth section in the initial value, so I place the values 23456 into a new float and have any value past the 2 numbers in the millionth numbers are used as values past the decimal point (23.456). Finally, the value that I got from dividing the length of the integer by 3 (Which is 2.3333) is floored and that final value (2) is used to determine that the 'million' string needs to be added to the end of the previously calculated value. Leading to a final string of 23.456 Million.</div>
+
+        <br>
+
+        <br />
+        <p>
+            <video class="mainVideo" controls>
+                <source src="Files/AI_FSM/StatesShowcase.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </p>
+
+        <br><br>
+
+        <div class="titleIntroText">
+            <a href="https://github.com/Montainproductions/JustPlayGameJam"><button class="button1">Github Repo</button></a>
+            <br>
+        </div>
+
+        <footer>
+            <p>- Joaquin De Losada, 2024, All rights reserved</p>
+        </footer>
+    </body>
+</html>

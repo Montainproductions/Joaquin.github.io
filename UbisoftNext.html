@@ -29,24 +29,22 @@
             <br>
         </div>
 
+
         <br>
-        <div class="subTitle">Intro:</div>
-        <br>
-        <div class="smallerTitle">When I initially planned to participate in the game jam I had limited experience using C++ and had spent the majority of my time using C# and Java. This meant that before I started I decided to do some basic research on how different the language was to what I was used to. After some consideration of how the memory system worked, I decided that I would attempt to use it in a limited manner. This way I could get some more practice with it while keeping it to a limited fashion so as to not overwhelm myself or risk too many memory leaks.</div>
+        <div class="smallerTitle">This project was my entry for the Ubisoft Next Competition, where I developed a Bomberman-style game using C++ and a basic graphical GUI. The game features a 15x15 grid where players control a fast-moving drill, aiming to destroy green destructible boxes to earn points before the timer runs out. Each level generates a unique layout, and as players progress, the starting timer decreases, challenging them to act more quickly.</div>
 
         <br>
 
         <img class="mainImges" src="Files/UbisoftNext.png" />
 
         <hr>
-        <div class="subTitle">Project explanation:</div>
         <br>
-        <div class="smallerTitle">The theme of the Game Jam was to make a Bomberman-style game. During the project even though I had limited experience with using the API and C++ I was able to piece together the basic language syntax and design with the help of my previous experience using C# and Java.</div>
+        <div class="smallerTitle">Transitioning my Java and C# knowledge to C++ presented challenges, especially since I had no prior experience with Ubisoft's GUI system. Early on, I focused on learning the GUI framework, creating a level generator, and debugging interactions between the 2D array-based system and the graphical interface to ensure smooth gameplay. This project was a proof of concept that I could not only work with a GUI system but also transition between languages and use previous programming knowledge to solve problems.</div>
 
         <br>
 
         <div class="smallerTitle">
-            Something I am proud about in the project is the level creation method as it is set up in a way that would allow it to create a new level each time the player goes to the next level or starts a new game. It is set up with a 2d array data type position which contains a x and y pixel position as well as a string with the object that is contained in the position. I proceed to go through the 2d array and place all of the walls that the player cant pass through both around the border and in the middle of the map itself. I proceed to determine if the current position contains the string "Empty" to then return a number using a random method C++ has as part of their library and the current time as a seed to help with the randomness. If the number turns out to be less than 1/4 the max number that the seeded random can return (In this case is 32767) it will then set the Position as a breakable wall that the player can break to gain points and continue on with the level. Because of the chances that two people will start a new game or level at the same time it allows for the level creator the ability to seemingly create a new level each time.
+            A highlight of the project is the level creation method, which uses a 2D array to manage grid positions, assigning breakable walls randomly while maintaining variety through seeded randomization. The system ensures each level feels fresh and unpredictable. I did this by creating a struct that contained the x, and y positions and a string that determined the type of the wall. I then created a 2d Array with the struct as its data type and made it size 15X15. I proceeded to set the border of the map with a wall named ” Unbreakable wall” and at certain positions. I would then loop through the entire 2d Array and in the areas that had an empty spot I had a random number generator that would create a value between 0 and 32767. If the value was greater than a third of 32767 I would create a breakable wall. The percentage could easily be changed allowing for more or less breakable walls to be created and therefore change how many points the player could earn per level.
         </div>
 
         <br>
@@ -64,8 +62,7 @@
 
         <br>
         <p class="smallerTitle">
-            One way I could improve on the random number generator is by taking in account the current level, how many destructible walls have already been created in the level and the current position that the level created is looking at. This would allow for even more random levels as the chances that the combination of all these different variables can be achieved together would be difficult to achieve and allow for each new level someone plays to be unique to their playthrough.
-        </p>
+            If I were to revisit the project, I’d slow down the player’s movement for better control and introduce new mechanics like a dash ability to enhance gameplay depth. These changes would reduce repetition and encourage more strategic decision-making as players progress.</p>
 
         <br><br>
 
