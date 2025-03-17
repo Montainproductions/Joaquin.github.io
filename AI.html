@@ -15,11 +15,11 @@
             <div class="titleIntroText"> Hierarchical Finite State Machine (HFSM) </div>
             <div class="titleIntroText"> 2023 </div>
             <div class="titleIntroText"> C#/Unity </div>
-            <div class="firstIntroTextFSM"><strong>New Alert and Searching States:</strong> An alert state was introduced to create a brief delay before the AI identifies the player as a threat. This offers the player a tactical advantage and more immersive gameplay. The searching state improves AI responsiveness by adding layers to its behavior.</div>
+            <div class="firstIntroTextFSM"><strong>New Alert and Searching States:</strong> An alert state was introduced to create a brief delay before the AI identifies the player as a threat. This offers the player a tactical advantage and more immersive gameplay. The searching state improves AI responsiveness by adding layers to its behavior by allowing the AI to search for the player when they leave the AIs sight.</div>
 
             <br>
 
-            <div class=" firstIntroTextFSM"><strong>FSM to HFSM Refactoring Challenges:</strong> The migration required restructuring due to multiple references to the FSM manager. A utility-based trait system was updated to accommodate both FSM and HFSM implementations, ensuring appropriate script checks and behavior adjustments.</div>
+            <div class=" firstIntroTextFSM"><strong>FSM to HFSM Refactoring Challenges:</strong> Migrated the Finite State Machine (FSM) into a Hierarchical Finite State Machine (HFSM) allowing for preformance improvements by allowing for repetitive code to be unified into more common methods and states.</div>
 
             <br>
 
@@ -33,7 +33,7 @@
 
         <br>
 
-        <div class="smallerTitle">This post extends my previous project, “AI Finite State Machine.” After a few days of completing the project and conversing with a few friends about it, I realized that there were parts of the AI that I could improve by making it a Hierarchical Finite State Machine (HFSM). So, after some planning, I sketched out a new state machine that would implement the states I had already created as well as two new alert states and make the entire project in a Hierarchical Finite State Machine.</div>
+        <div class="smallerTitle">This post extends my previous project, 'AI Finite State Machine'. After a few days of completing the project and conversing with a few friends about it, I realized that there were parts of the AI that I could improve by making it a Hierarchical Finite State Machine (HFSM). So, after some planning, I sketched out a new state machine that would implement the states I had already created as well as two new alert states and make the entire project in a Hierarchical Finite State Machine.</div>
 
         <br>
 
@@ -45,7 +45,7 @@
 
         <br>
 
-        <div class="smallerTitle">The main changes made to the AI was to move most of the vision checking/information to the parent states so that each parent state was in charge of its timings and distances for looking for the player. As the player transitions from the parent non-combat state to the parent combat state, the AI will become more aware of the player and use its “senses” to look for the player. Most people might do this when searching and attacking a person, as in the beginning, they would be observant of their areas and look in a shorter area. But as they realize an enemy is nearby, they will look at a further distance, allowing them to keep track for longer.</div>
+        <div class="smallerTitle">The main changes made to the AI was to move most of the vision checking/information to the parent states so that each parent state was in charge of its timings and distances for looking for the player. As the player transitions from the parent non-combat state to the parent combat state, the AI will become more aware of the player and use its ï¿½sensesï¿½ to look for the player. Most people might do this when searching and attacking a person, as in the beginning, they would be observant of their areas and look in a shorter area. But as they realize an enemy is nearby, they will look at a further distance, allowing them to keep track for longer.</div>
 
         <br>
 
