@@ -1,91 +1,123 @@
-﻿<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+﻿<!DOCTYPE html>
 <html>
     <head>
-        <title>Joaquin De Losada - HFSM AI</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Joaquin De Losada - Idle game</title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/cyborg/bootstrap.min.css" rel="stylesheet"/>
     </head>
     <body>
-        <div class="topNav">
-            <a href="index.html"><div class="nameTopRight">Joaquin De Losada</div></a>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Joaquin De Losada</a>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        <div class="nav-item">
+                            <a class="nav-link" href="AboutMe.html">About Me</a>
+                        </div>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <a href="ContactMe.html" class="btn btn-outline-info">Contact Me</a>
+
+                        <a href="ResumeOptions.html" class="btn btn-info">Resume Options</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="boxMiddleScreen" style="padding: 60px;">
+            <div class="card border-primary mb-3 boxMiddleScreen" style="max-width: 30rem;">
+                <div class="card-header">Game Development</div>
+                <div class="card-body">
+                    <h4 class="card-title">Idle Game</h4>
+                    <p class="card-text boxMiddleScreen">Release Date: December 2024</p>
+                    <p class="card-text boxMiddleScreen">C# programmer</p>
+                </div>
+            </div>
         </div>
-        <div class="lightGreenBox">
-            <br>
 
-            <div class="titleIntroText">Idle game</div>
-            <div class="titleIntroText"> 2023 </div>
-            <div class="titleIntroText"> C#/Unity - Audio </div>
-            <div class="firstIntroTextFSM"><strong>Game description:</strong> Developed a satirical idle game during a game jam, focusing on pollution and industrial capitalism, where players manage companies to generate profits while impacting global pollution levels.</div>
+        
+        <div class="bs-component centertab" >
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#projectDescription" aria-selected="true" role="tab">Project description</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" data-bs-toggle="tab" href="#linkToPages" aria-selected="false" tabindex="-1" role="tab">Link to download page</a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade show active" id="projectDescription" role="tabpanel">
+                    <div class="paddingText"><Strong>About the game:</Strong> Developed a satirical idle game, focusing on improving efficiency and buying/expanding what companies the players own.</div>
 
-            <br>
+                    <div class="paddingText"><strong>Mathematical models:</strong> Researched idle game mechanics and applied mathematical equations to determine dynamic costs and income for each company.</div>
 
-            <div class=" firstIntroTextFSM"><strong>Mathematical models:</strong> Researched idle game mechanics and applied mathematical models for upgrading costs and profit increases, using tools like Desmos for fine-tuning values.</div>
-
-            <br>
-
-            <div class=" firstIntroTextFSM"><strong>Created system to display large numbers:</strong> Overcame challenges in displaying large numerical values by implementing a logarithmic system to format numbers with appropriate suffixes (e.g., Million, Billion).</div>
-            <br>
+                    <div class="paddingText"><strong>Int overflow into a readable scale:</strong> Implemented a logarithmic system to better format large numbers that would cause overflow errors (e.g., Billion, Tillion).</div>
+                </div>
+                <div class="tab-pane fade" id="linkToPages" role="tabpanel">
+                    
+                    <div class="boxMiddleScreen" style="padding: 30px;"><a href="https://github.com/Montainproductions/JustPlayGameJam"><button type="button" class="btn btn-dark">Git Hub Repo</button></a></div>
+                </div>
+            </div>
         </div>
 
-        <br>
+        <div class="paddingText"></div>
 
-        <div class="subTitle">Intro: </div>
+        <h4 class="boxMiddleScreen">Intro: </h4>
 
-        <br>
+        <div class="centertab">The initial idea for the game came during a game jam when the designer/writer and I were planning out a game doing a weekend long game jam we were participating in. The initial idea had the player be able to buy a few companies and upgrades that would give them money every so often. We were able to make a MVP version of the game during the game jam, and many of the mechanics were implemented and are explained here. After the game jam I did decide to spend the next couple of months expanding the companies, doing more QA tests and balancing the general progression of the game.</div>
 
-        <div class="smallerTitle">In July 2024, I worked on a game jam with a writer/designer where we made a bare-bone satirical idle game around pollution and being a titan of industry. The game consisted of having the player buying companies that could bring money which can be used to improve how much money the companies they own make money or save up to buy a better factory. As the player buys more companies and drastically increases their profits there is an increase in pollution that's detected in the world. Depending on the current pollution levels and what companies have already been bought it will cause certain news articles to be "released" which appear in the game news section.</div>
+        <div class="paddingText"></div>
 
-        <br>
-
-        <img class="mainImges" src="Files/IdleGame/Screenshot 2024-12-21 223034.png">
-
-        <hr>
-
-        <div class="subTitle">Math for company profits: </div>
-
-        <br>
-
-        <div class="smallerTitle">One of the main pillarstones of the game was the amount of money each company would earn and how it increased for every upgrade. So the first step was determining how other games like 'Adventure Capitalist' worked out the upgrade costs and the amount of money each block would return. After some research, we went to the following <a href="https://blog.kongregate.com/the-math-of-idle-games-part-i/">Kongregate blog</a> on math for idle games. We then determined all the values that would dynamically change when purchased by the player. This was narrowed down to a button to increase production, a button to improve efficiency (And decrease pollution), and the monthly pollution/profit values.</div>
-
-        <br>
-        <div class="smallerTitle">At this point, we spent some time in Desmos testing different constants for the equations to make sure they would properly increase. Once this was done, we implemented them to prefabs to start testing appropriate initial costs and whether unlocking and upgrading a company would smoothly chain to the next company. This took various hours of testing and reduced the number of companies available to buy.</div>
-
-        <br>
-        <div class="smallerTitle">By this point in development, the game jam had finished but we enjoyed the game we had at the time the designer and I spent another week finishing to work out some other features we wanted to implement as well as rework the news system to work better. At that point the designer's work was complete and it was primarily up to me to finish implementing all the companies we wanted to have as well as include an energy source mechanic into the game. The energy source would work similarly to increasing the efficiency of a company but be a general value that affects every company instead of specific ones. The cleaner the energy source then the better it would improve the companys untill an upper limit.</div>
-        <br>
-
-        <img src="Files/IdleGame/Screenshot 2024-12-20 000220.png" class="mainImges">
-
-        <hr>
-
-        <div class="subTitle">Number representation on screen: </div>
-
-        <br>
-
-        <div class="smallerTitle">An unforeseen challenge with the project was trying to show large numbers, especially when they were past the value of 1 million. I solved this by finding the log(10) of the integer in question and getting the floor from the resulting float. With the floored number I know the length of the initial number which can be used to find both how many digits need to be presented and determine what string should be attached at the end (Million, Billion, Trillion, etc). I can calculate a reduced value which represents the digits that appear in the initial values of the integer.</div>
-
-        <br>
-
-        <div class="smallerTitle">As an example let's consider the player has 23,456,789 dollars to spend. When doing a log calculation and obtaining the floor (Integer value of the current float) I have a length of integer of 7. I can then find the remainder of the value when dividing by 3 (2.3333). This new remainder float (0.3333) means that only 2 values (2 and 3) appear in the millionth section in the initial value, so I place the values 23456 into a new float and have any value past the 2 numbers in the millionth numbers are used as values past the decimal point (23.456). Finally, the value that I got from dividing the length of the integer by 3 (Which is 2.3333) is floored and that final value (2) is used to determine that the 'million' string needs to be added to the end of the previously calculated value. Leading to a final string of 23.456 Million.</div>
-
-        <br>
-
-        <br />
-        <p>
-            <video class="mainVideo" controls>
-                <source src="Files/IdleGame/2024-12-19 23-57-14.mp4" type="video/mp4">
+        <div class="boxMiddleScreen">
+            <video src="Files/IdleGame/2024-12-19 23-57-14.mp4" controls width="820px" height="600">
                 Your browser does not support the video tag.
             </video>
-        </p>
-
-        <br><br>
-
-        <div class="titleIntroText">
-            <a href="https://github.com/Montainproductions/JustPlayGameJam"><button class="button1">Github Repo</button></a>
-            <br>
         </div>
 
-        <footer>
+        <div class="paddingText"></div>
+
+        <h4 class="boxMiddleScreen">Math for company profits: </h4>
+
+        <div class="centertab">One of the initial challenges with the game was how to calculate the dynamic cost or how much a company should be earning. For cost values I would get the base initial cost then multiply it by the the resulting value of the specific companies scale value to the power of the current level the upgrade or unlock level. This would give future designers 3 independently  adjustable values that created a unique curve for cost of the item vs its benefit. Which forces the player to be strategic on what might be worth buying at any specific time or if its better to accumulate more money and acquire a more profitable company/upgrade. Even so the cost increases would be consistent in the changes that players could still predict and are given a smooth progression between different sections of the game.</div>
+
+        <div class="paddingText"></div>
+
+        <div class="boxMiddleScreen">
+            <img src="Files/IdleGame/Screenshot 2024-12-20 000220.png" class="boxMiddleScreen">
+        </div>
+
+        <div class="paddingText"></div>
+
+        <h4 class="boxMiddleScreen">Number representation on screen:</h4>
+
+        <div class="centertab">An interesting challenge that needed to be solved was working around integer overflows and needing to display values beyond that point for costs and the amount of money the player has. For context on overflow variables, when creating a new variable in C# you need to set a data type At the same time, many players will want to count how many digits exist in values greater than 1 million as a way to determine how much money they have. So it was important to adjust the counter so that it would display any value greater than 1 million into two parts, a reduced value and its corresponding name (Million, Billion, Trillion, etc).</div>
+
+        <div class="paddingText"></div>
+
+        <div class="centertab">I solved this by finding the log(10) of the integer in question and getting the floor from the resulting float. With the floored number I know the length of the initial number which can be used to find both how many digits need to be presented and determine what string should be attached at the end (Million, Billion, Trillion, etc). I can calculate a reduced value which represents the digits that appear in the initial values of the integer.</div>
+
+        <div class="paddingText"></div>
+
+        <div class="centertab">As an example let's consider the player has 23,456,789 dollars to spend. When doing a log calculation and obtaining the floor (Integer value of the current float) I have a length of integer of 7. I can then find the remainder of the value when dividing by 3 (2.3333). This new remainder float (0.3333) means that only 2 values (2 and 3) appear in the millionth section in the initial value, so I place the values 23456 into a new float and have any value past the 2 numbers in the millionth numbers are used as values past the decimal point (23.456). Finally, the value that I got from dividing the length of the integer by 3 (Which is 2.3333) is floored and that final value (2) is used to determine that the 'million' string needs to be added to the end of the previously calculated value. Leading to a final string of 23.456 Million.</div>
+
+        <div class="paddingText"></div>
+
+        <div class="boxMiddleScreen">
+            <img src="Files/IdleGame/Screenshot 2024-12-21 223034.png" class="boxMiddleScreen">
+        </div>
+
+        <div class="paddingText"></div>
+
+        <div class="centertab">One mechanic I decided to include after the game jam as an extra challenge was an energy source which would help improve efficiency for all companies as well as give players targets and a better understanding of their progress while playing the game. Every 6 companies that a player would get would unlock a new set type of energy source at a price a magnitude greater then what player normally would have at that point. This meant that players would have the dilemma of needing to decide what's worth it, wait some time to get enough money to buy it or upgrade what you already have so that at an even later date they have the money to not just acquire the new energy source but upgrade the efficiency as soon as you get it.</div>
+
+        <div class="paddingText"></div>
+        <footer class="paddingText">
             <p>- Joaquin De Losada, 2025, All rights reserved</p>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

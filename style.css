@@ -1,526 +1,187 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
- }
-
-body {
-    background-color: #CED0CE;
-    font-family: monospace;
-    height: 100%;
+:root {
+    --card-height   : 75vh;
+    --stack-gap     : 18px;
+    --base-top      : 60px;
+    --scroll-phase  : 100vh;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 50px;
+html { scroll-behavior: smooth; }
+
+.multiBoxCombination{
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center; 
+    align-items: center;
+    
 }
 
-/* Top Menu Area*/
-.topNav {
-    flex-shrink: 0;
-    background: #327348;
+.duelBoxDisplay{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
 }
 
-.nameTopRight {
-    color: #CED0CE;
-    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-    font-family: Inter;
-    width: 300px;
-    font-size: 30px;
-    font-style: normal;
-    position: relative;
-    top: 30px;
-    left: 40px;
+.singleBoxDisplay{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
-/* Intro text area*/
-.lightGreenBox {
-    flex-shrink: 0;
-    margin-left: auto;
-    margin-right: auto;
-    border: 8px solid #1E5E8C;
-    background: #71AE85;
-    box-shadow: 0px 4px 12px 8px rgba(0, 0, 0, 0.25) inset;
+.boxMiddleScreen{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
-.titleIntroText {
-    width: 550px;
-    height: 40px;
-    flex-shrink: 0;
-    color: #CED0CE;
-    text-align: center;
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    font-size: 30px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+.centertab{
+    max-width: 70rem;
+    margin: 0 auto;
 }
 
-.firstIntroText {
-    width: 929px;
-    height: 200px;
-    flex-shrink: 0;
-    color: #CED0CE;
-    text-align: center;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.paddingText{
+    padding: 10px;
 }
 
-.firstIntroTextFSM {
-    color: #CED0CE;
-    text-align: center;
-    font-family: Inter;
+.videoDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.projectBox {
-    border-radius: 10px;
-    border: 7px solid #1E5E8C;
-    background: #327348;
-    box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.25);
-    flex-shrink: 0;
+img{
+    width: 35rem;
+    aspect-ratio: 16 / 10;
 }
 
-.projectText {
-    color: #CED0CE;
-    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-    font-family: Inter;
-    width: 300px;
-    font-size: 24px;
-    font-style: normal;
-    text-align: center;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+video{
+    width: 60rem;
+    aspect-ratio: 16 / 9;
 }
 
-/*Explanation Text*/
-.subTitle {
-    flex-shrink: 0;
-    color: #2451e3;
-    font-family: Inter;
-    text-decoration: underline;
-    font-weight: bold;
-    position: relative;
-    left: 35px;
-}
+/* */
 
-.subTitleBottem {
-    flex-shrink: 0;
-    color: #2451e3;
-    font-family: Inter;
-    position: relative;
-    left: 35px;
-}
-
-.smallerTitle {
-    color: #2451e3;
-    position: relative;
-    left: 35px;
-    width: 95%
-}
-
-hr {
-    border: none; /* Removes default border */
-    height: 2px; /* Line thickness */
-    background-color: #327348; /* Line color */
-    width: 95%; /* Line width (relative to its container) */
-    margin: 20px auto; /* Adds spacing and centers it */
-}
-
-.button1 {
+.hero {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-.newCenter {
-    width: 820px;
-    margin-left: auto;
-    margin-right: auto;
+.scroll-hint {
+    margin-top: 2.5rem;
+    color: #6c757d;
+    font-size: 1.4rem;
+    animation: bounce 1.8s ease-in-out infinite;
 }
 
-.mainImges {
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.stack-container {
+    position: relative;
+    min-height: calc((3 - 1) * var(--scroll-phase) + var(--card-height) + 6rem);
+    padding-bottom: 6rem;
+}
+
+.stack-card {
+    position: sticky;
     display: block;
+    width: min(90vw, 880px);
+    height: var(--card-height);
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
+    border-radius: 18px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 28px 64px rgba(0,0,0,.65);
+    transition: transform .38s cubic-bezier(.22,1,.36,1), box-shadow .38s ease;
+}
+.stack-card:hover {
+    transform: translateY(-6px) scale(1.012);
+    box-shadow: 0 44px 90px rgba(0,0,0,.8);
+    color: #fff;
 }
 
-.mainVideo {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+.card-1 { 
+    top: calc(var(--base-top) + var(--stack-gap) * 0);
+    z-index: 10;
 }
 
-embed {
-    margin-left: auto;
-    margin-right: auto;
+.card-2 {
+    top: calc(var(--base-top) + var(--stack-gap) * 1); 
+    z-index: 20; 
+    margin-top: var(--scroll-phase); 
 }
 
-/* 4k Screens */
-@media only screen and (min-width: 1441px) {
-    .topNav {
-        width: 100%;
-        height: 100px;
-    }
-
-    .nameTopRight {
-        font-weight: 700;
-    }
-
-    .mainImges {
-        width: 600px;
-        height: 400px;
-    }
-
-    .mainVideo {
-        width: 700px;
-        height: 440px;
-    }
-
-    .projectBox {
-        width: 415px;
-        height: 500px;
-    }
-
-    .projectBoxPosition1 {
-        position: relative;
-        top: 45px;
-        left: 270px;
-    }
-    
-    .projectBoxPosition2 {
-        position: relative;
-        top: -455px;
-        left: 770px;
-    }
-
-    .projectBoxPosition3 {
-        position: relative;
-        top: -400px;
-        left: 270px;
-    }
-
-    .projectBoxPosition4 {
-        position: relative;
-        top: -900px;
-        left: 770px;
-    }
-
-    .projectBoxPosition5 {
-        position: relative;
-        top: -835px;
-        left: 520px;
-    }
-
-    .projectImage1 {
-        position: relative;
-        top: 76px;
-        left: -6px;
-        width: 414px; 
-        height: 390px;
-    }
-
-    .projectImage2 {
-        position: relative;
-        top: 50px;
-        left: -6px;
-        width: 414px;
-        height: 390px;
-    }
-
-    .projectText1 {
-        top: 40px;
-    }
-    
-    .projectText2 {
-        top: 30px;
-    }
+.card-3 { 
+    top: calc(var(--base-top) + var(--stack-gap) * 2); 
+    z-index: 30; 
+    margin-top: var(--scroll-phase); 
 }
 
-/* large monitor */
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    .topNav {
-        width: 100%;
-        height: 100px;
-    }
-
-    .nameTopRight {
-        font-weight: 700;
-    }
-
-    .lightGreenBox {
-        width: 100%;
-    }
-
-    .mainImges {
-        width: 500px;
-        height: 350px;
-    }
-
-    .mainVideo {
-        width: 600px;
-        height: 320px;
-    }
-
-    .projectBox {
-        width: 415px;
-        height: 500px;
-    }
-
-    .projectBoxPosition1 {
-        position: relative;
-        top: 45px;
-        left: 110px;
-    }
-
-    .projectBoxPosition2 {
-        position: relative;
-        top: -455px;
-        left: 590px;
-    }
-
-    .projectBoxPosition3 {
-        position: relative;
-        top: -400px;
-        left: 110px;
-    }
-
-    .projectBoxPosition4 {
-        position: relative;
-        top: -900px;
-        left: 590px;
-    }
-
-    .projectBoxPosition5 {
-        position: relative;
-        top: -835px;
-        left: 350px;
-    }
-
-    .projectImage1 {
-        position: relative;
-        top: 76px;
-        left: -6px;
-        width: 414px;
-        height: 390px;
-    }
-
-    .projectImage2 {
-        position: relative;
-        top: 50px;
-        left: -6px;
-        width: 414px;
-        height: 390px;
-    }
-
-    .projectText1 {
-        top: 40px;
-    }
-
-    .projectText2 {
-        top: 30px;
-    }
+.stack-card img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  transition: transform .65s cubic-bezier(.22,1,.36,1);
 }
 
-/* regular laptop */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .topNav {
-        width: 100%;
-        height: 100px;
-    }
-
-    .lightGreenBox {
-        width: 100%;
-    }
-
-    .nameTopRight{
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 600;
-        position: relative;
-        top: 30px;
-        left: 40px;
-    }
-
-    .titleIntroText {
-        font-size: 30px;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .firstIntroText {
-        font-size: 25px;
-        position: relative;
-        top: 80px;
-        left: 50px;
-    }
-
-    /* Main Page Project */
-    .projectBox {
-        width: 325px;
-        height: 400px;
-    }
-
-    .projectBoxPosition1{
-        position: relative;
-        top: 60px;
-        left: 100px;
-    }
-
-    .projectBoxPosition2{
-        position: relative;
-        top: -340px;
-        left: 500px;
-    }
-
-    .projectBoxPosition3 {
-        position: relative;
-        top: -240px;
-        left: 100px;
-    }
-
-    .projectBoxPosition4 {
-        position: relative;
-        top: -640px;
-        left: 500px;
-    }
-
-    .projectBoxPosition5{
-        position: relative;
-        top: -510px;
-        left: 300px;
-    }
-
-    .projectImage1 {
-        position: relative;
-        top: 76px;
-        left: -7px;
-        width: 325px;
-        height: 290px;
-    }
-
-    .projectImage2 {
-        position: relative;
-        top: 50px;
-        left: -7px;
-        width: 325px;
-        height: 290px;
-    }
-
-    .projectText1 {
-        top: 40px;
-    }
-
-    .projectText2 {
-        top: 30px;
-    }
-
-    .mainVideo {
-        width: 550px;
-        height: 350px;
-    }
+.stack-card:hover img {
+    transform: scale(1.05); 
 }
 
-/* small laptop */
-@media only screen and (min-width: 426px) and (max-width: 769px) {
-    .topNav {
-        width: 100%;
-        height: 75px;
-    }
-
-    .lightGreenBox {
-        width: 100%;
-    }
-
-    .nameTopRight {
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 400;
-        position: relative;
-        top: 20px;
-        left: 30px;
-    }
-
-    .mainVideo {
-        width: 450px;
-        height: 250px;
-    }
-
-    /* Main Page Project */
-    .projectBox {
-        width: 276px;
-        height: 350px;
-    }
-
-    .projectBoxPosition1 {
-        position: relative;
-        top: 40px;
-        left: 40px;
-    }
-
-    .projectBoxPosition2 {
-        position: relative;
-        top: -310px;
-        left: 390px;
-    }
-
-    .projectBoxPosition3 {
-        position: relative;
-        top: -240px;
-        left: 40px;
-    }
-
-    .projectBoxPosition4 {
-        position: relative;
-        top: -590px;
-        left: 390px;
-    }
-
-    .projectBoxPosition5 {
-        position: relative;
-        top: -510px;
-        left: 230px;
-    }
-
-    .projectImage1 {
-        position: relative;
-        top: 76px;
-        left: -7px;
-        width: 277px;
-        height: 290px;
-    }
-
-    .projectImage2 {
-        position: relative;
-        top: 50px;
-        left: -7px;
-        width: 277px;
-        height: 290px;
-    }
-
-    .projectText1 {
-        top: 40px;
-        left: -20px;
-    }
-
-    .projectText2 {
-        top: 30px;
-        left: -20px;
-    }
-
-    .mainVideo {
-        width: 550px;
-        height: 350px;
-    }
+.card-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,.2) 45%, transparent 68%);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 2.6rem 3rem;
 }
 
-/* tablet */
-@media only screen and (min-width: 376px) and (max-width: 426px) {}
+.card-label {
+  font-size: .72rem; letter-spacing: .2em;
+  text-transform: uppercase; opacity: .6; margin-bottom: .35rem;
+}
 
-/* landscape phone */
-@media only screen and (min-width: 321px) and (max-width: 376px) {}
+.card-title {
+  font-size: clamp(1.5rem, 2.8vw, 2.4rem);
+  font-weight: 700; line-height: 1.15; margin-bottom: .55rem;
+}
+
+.card-cta {
+  display: inline-flex; align-items: center; gap: .4rem;
+  font-size: .85rem; font-weight: 500;
+  opacity: 0; transform: translateX(-10px);
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+.stack-card:hover .card-cta { 
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+.card-stripe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    height: 4px; 
+    z-index: 1; 
+}
+
+.card-1 .card-stripe { background: #38bdf8; }
+.card-2 .card-stripe { background: #a78bfa; }
+.card-3 .card-stripe { background: #34d399; }
