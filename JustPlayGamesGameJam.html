@@ -94,11 +94,15 @@
 
         <h4 class="boxMiddleScreen">Number representation on screen:</h4>
 
-        <div class="centertab">An interesting challenge that needed to be solved was working around integer overflows and needing to display values beyond that point for costs and the amount of money the player has. For context on overflow variables, when creating a new variable in C# you need to set a data type At the same time, many players will want to count how many digits exist in values greater than 1 million as a way to determine how much money they have. So it was important to adjust the counter so that it would display any value greater than 1 million into two parts, a reduced value and its corresponding name (Million, Billion, Trillion, etc).</div>
+        <div class="centertab">An interesting challenge that needed to be solved was working around integer overflows (Values that need to go past the maximum value a data type allows, around 2 billion for ints) and needing to display values beyond that point for costs and the amount of money the player has. For context on overflow variables, when creating a new variable in C# you need to set a data type At the same time, many players will want to count how many digits exist in values greater than 1 million as a way to determine how much money they have. So it was important to adjust the counter so that it would display any value greater than 1 million into two parts, a reduced value and its corresponding name (Million, Billion, Trillion, etc).</div>
 
         <div class="paddingText"></div>
 
-        <div class="centertab">I solved this by finding the log(10) of the integer in question and getting the floor from the resulting float. With the floored number I know the length of the initial number which can be used to find both how many digits need to be presented and determine what string should be attached at the end (Million, Billion, Trillion, etc). I can calculate a reduced value which represents the digits that appear in the initial values of the integer.</div>
+        <div class="centertab">I solved this by finding the log(10) of my initial value and then calculating the floor. 
+        This gives me the size of the intended final value (Million, Billion, ETC) and at the same time allowed me to 
+        divide it by a factor of 3 to get the remainder which tells the algorithem how many digits need to be displayed.
+        With this info I round any final values and place it as a string and displayed. 
+        The final value also becomes the current balance for the player and future calculations are done on the new reduced values.</div>
 
         <div class="paddingText"></div>
 
